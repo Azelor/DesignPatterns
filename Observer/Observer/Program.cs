@@ -51,16 +51,19 @@ namespace Observer
             observers = new List<Observer>();
         }
 
+        // register observer to the subject
         public void RegisterObserver(Observer o)
         {
             observers.Add(o);
         }
 
+        // removes observer from the subject list
         public void RemoveObserver(Observer o)
         {
             observers.Remove(o);
         }
 
+        // notifies observers of subject's change of state
         public void NotifyObservers()
         {
             foreach (Observer o in observers)
