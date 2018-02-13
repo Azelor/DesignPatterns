@@ -5,7 +5,7 @@ namespace Singelton
 {
     public class NewSingleton
     {
-        private static NewSingleton instance = new NewSingleton();
+        private static NewSingleton instance;
         private NewSingleton(){}
         private object key = new object();
         private readonly List<string> list = new List<string>();
@@ -13,6 +13,7 @@ namespace Singelton
         {
             get
             {
+                if (instance is null) instance = new NewSingleton();
                 return instance;
             }
         }
@@ -22,7 +23,7 @@ namespace Singelton
             lock (key)
             {
                 if (list.Contains(s)) return;
-                Thread.Sleep(1000);
+                Thread.Sleep(100);
                 list.Add(s);
             }
         }

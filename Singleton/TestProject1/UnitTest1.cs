@@ -15,7 +15,7 @@ namespace Tests
             var th2 = new Thread(addNumbers);
             th1.Start();
             th2.Start();
-            Thread.Sleep(30000);
+            Thread.Sleep(3000);
             var l = NewSingleton.Instance.List();
             Assert.AreEqual(10, NewSingleton.Instance.Count());
         }
