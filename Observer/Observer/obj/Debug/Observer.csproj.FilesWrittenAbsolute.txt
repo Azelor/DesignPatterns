@@ -1,0 +1,5 @@
+/Users/kaarelsoot/RiderProjects/DesignPatterns/Observer/Observer/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/Users/kaarelsoot/RiderProjects/DesignPatterns/Observer/Observer/bin/Debug/Observer.exe.mdb
+/Users/kaarelsoot/RiderProjects/DesignPatterns/Observer/Observer/bin/Debug/Observer.exe
+/Users/kaarelsoot/RiderProjects/DesignPatterns/Observer/Observer/obj/Debug/Observer.exe
+/Users/kaarelsoot/RiderProjects/DesignPatterns/Observer/Observer/obj/Debug/Observer.exe.mdb

@@ -1,0 +1,11 @@
+/Users/kaarelsoot/Desktop/Kool/Lõputöö/singleton/Singleton/TestProject1/bin/Debug/netcoreapp2.0/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+/Users/kaarelsoot/Desktop/Kool/Lõputöö/singleton/Singleton/TestProject1/bin/Debug/netcoreapp2.0/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+/Users/kaarelsoot/Desktop/Kool/Lõputöö/singleton/Singleton/TestProject1/bin/Debug/netcoreapp2.0/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+/Users/kaarelsoot/Desktop/Kool/Lõputöö/singleton/Singleton/TestProject1/bin/Debug/netcoreapp2.0/TestProject1.dll
+/Users/kaarelsoot/Desktop/Kool/Lõputöö/singleton/Singleton/TestProject1/bin/Debug/netcoreapp2.0/TestProject1.pdb
+/Users/kaarelsoot/Desktop/Kool/Lõputöö/singleton/Singleton/TestProject1/obj/Debug/netcoreapp2.0/TestProject1.csprojResolveAssemblyReference.cache
+/Users/kaarelsoot/Desktop/Kool/Lõputöö/singleton/Singleton/TestProject1/obj/Debug/netcoreapp2.0/TestProject1.csproj.CoreCompileInputs.cache
+/Users/kaarelsoot/Desktop/Kool/Lõputöö/singleton/Singleton/TestProject1/obj/Debug/netcoreapp2.0/TestProject1.AssemblyInfoInputs.cache
+/Users/kaarelsoot/Desktop/Kool/Lõputöö/singleton/Singleton/TestProject1/obj/Debug/netcoreapp2.0/TestProject1.AssemblyInfo.cs
+/Users/kaarelsoot/Desktop/Kool/Lõputöö/singleton/Singleton/TestProject1/obj/Debug/netcoreapp2.0/TestProject1.dll
+/Users/kaarelsoot/Desktop/Kool/Lõputöö/singleton/Singleton/TestProject1/obj/Debug/netcoreapp2.0/TestProject1.pdb

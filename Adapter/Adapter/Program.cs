@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Threading;
 
-namespace Adapter
+namespace Adapter // TODO: Git korda nii, et mingeid kohalikke faile kaasa ei tuleks :)
 {
     public class DuckTestDrive
     {
@@ -23,7 +23,6 @@ namespace Adapter
 
             Console.WriteLine("\nThe TurkeyAdapter says...");
             TestDuck(turkeyAdapter);
-
         }
 
         static void TestDuck(Duck duck)

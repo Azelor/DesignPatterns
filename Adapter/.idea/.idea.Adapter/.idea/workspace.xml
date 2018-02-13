@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0e3dcc71-53d4-404d-b182-c5e10097eec0" name="Default" comment="" />
+    <list default="true" id="0e3dcc71-53d4-404d-b182-c5e10097eec0" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Adapter/bin/Debug/Adapter.exe.mdb" afterPath="$PROJECT_DIR$/Adapter/bin/Debug/Adapter.exe.mdb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Adapter/obj/Debug/Adapter.exe.mdb" afterPath="$PROJECT_DIR$/Adapter/obj/Debug/Adapter.exe.mdb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.Adapter/.idea/contentModel.xml" afterPath="$PROJECT_DIR$/.idea/.idea.Adapter/.idea/contentModel.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.Adapter/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/.idea.Adapter/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Adapter/Program.cs" afterPath="$PROJECT_DIR$/Adapter/Program.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Adapter/obj/Debug/Adapter.csproj.FilesWrittenAbsolute.txt" afterPath="$PROJECT_DIR$/Adapter/obj/Debug/Adapter.csproj.FilesWrittenAbsolute.txt" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,41 +17,44 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="Program.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Adapter/Program.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            <state relative-caret-position="90">
+              <caret line="9" column="10" lean-forward="false" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
               <folding>
-                <marker date="1512396356563" expanded="true" signature="6:97" ph="..." />
-                <marker date="1512396356563" expanded="true" signature="116:2637" ph="{...}" />
-                <marker date="1512396356563" expanded="true" signature="149:804" ph="{...}" />
-                <marker date="1512396356563" expanded="true" signature="202:687" ph="{...}" />
-                <marker date="1512396356563" expanded="true" signature="728:798" ph="{...}" />
-                <marker date="1512396356563" expanded="true" signature="841:895" ph="{...}" />
-                <marker date="1512396356563" expanded="true" signature="932:1125" ph="{...}" />
-                <marker date="1512396356563" expanded="true" signature="966:1026" ph="{...}" />
-                <marker date="1512396356563" expanded="true" signature="1053:1119" ph="{...}" />
-                <marker date="1512396356563" expanded="true" signature="1154:1209" ph="{...}" />
-                <marker date="1512396356563" expanded="true" signature="1247:1467" ph="{...}" />
-                <marker date="1512396356563" expanded="true" signature="1282:1351" ph="{...}" />
-                <marker date="1512396356563" expanded="true" signature="1378:1461" ph="{...}" />
-                <marker date="1512396356563" expanded="true" signature="1477:1641" ph="/* Here comes the adapter! ... */" />
-                <marker date="1512396356563" expanded="true" signature="1679:2635" ph="{...}" />
-                <marker date="1512396356563" expanded="true" signature="1726:1848" ph="/* Next, we need to get a reference to the object that we are adapting. ... */" />
-                <marker date="1512396356563" expanded="true" signature="1892:1946" ph="{...}" />
-                <marker date="1512396356563" expanded="true" signature="1964:2116" ph="/* Now we need to implement all the methods in the interface. ... */" />
-                <marker date="1512396356563" expanded="true" signature="2144:2193" ph="{...}" />
-                <marker date="1512396356563" expanded="true" signature="2211:2485" ph="/* Even though both interfaces have a fly() method, Turkeys fly in short spurts - ... */" />
-                <marker date="1512396356563" expanded="true" signature="2511:2629" ph="{...}" />
-                <marker date="1512396356563" expanded="true" signature="2561:2619" ph="{...}" />
+                <marker date="1516623773613" expanded="false" signature="6:97" ph="..." />
+                <marker date="1516623773613" expanded="true" signature="186:2706" ph="{...}" />
+                <marker date="1516623773613" expanded="true" signature="219:873" ph="{...}" />
+                <marker date="1516623773613" expanded="true" signature="272:756" ph="{...}" />
+                <marker date="1516623773613" expanded="true" signature="797:867" ph="{...}" />
+                <marker date="1516623773613" expanded="true" signature="910:964" ph="{...}" />
+                <marker date="1516623773613" expanded="true" signature="1001:1194" ph="{...}" />
+                <marker date="1516623773613" expanded="true" signature="1035:1095" ph="{...}" />
+                <marker date="1516623773613" expanded="true" signature="1122:1188" ph="{...}" />
+                <marker date="1516623773613" expanded="true" signature="1223:1278" ph="{...}" />
+                <marker date="1516623773613" expanded="true" signature="1316:1536" ph="{...}" />
+                <marker date="1516623773613" expanded="true" signature="1351:1420" ph="{...}" />
+                <marker date="1516623773613" expanded="true" signature="1447:1530" ph="{...}" />
+                <marker date="1516623773613" expanded="true" signature="1546:1710" ph="/* Here comes the adapter! ... */" />
+                <marker date="1516623773613" expanded="true" signature="1748:2704" ph="{...}" />
+                <marker date="1516623773613" expanded="true" signature="1795:1917" ph="/* Next, we need to get a reference to the object that we are adapting. ... */" />
+                <marker date="1516623773613" expanded="true" signature="1961:2015" ph="{...}" />
+                <marker date="1516623773613" expanded="true" signature="2033:2185" ph="/* Now we need to implement all the methods in the interface. ... */" />
+                <marker date="1516623773613" expanded="true" signature="2213:2262" ph="{...}" />
+                <marker date="1516623773613" expanded="true" signature="2280:2554" ph="/* Even though both interfaces have a fly() method, Turkeys fly in short spurts - ... */" />
+                <marker date="1516623773613" expanded="true" signature="2580:2698" ph="{...}" />
+                <marker date="1516623773613" expanded="true" signature="2630:2688" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Adapter/Program.cs" root0="FORCE_HIGHLIGHTING" />
@@ -62,12 +72,13 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-480" />
-    <option name="y" value="-1057" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="514" />
+    <option name="y" value="23" />
     <option name="width" value="1165" />
-    <option name="height" value="1057" />
+    <option name="height" value="950" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="SolutionExplorer" proportions="" version="1">
       <flattenPackages />
@@ -83,6 +94,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="SolutionExplorer">
         <subPane>
           <expand>
@@ -96,7 +108,6 @@
         <option name="show-file-system" value="false" />
         <option name="show-all-items" value="false" />
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -139,11 +150,14 @@
       <option name="presentableId" value="Default" />
       <updated>1512394414427</updated>
       <workItem from="1512394415908" duration="1966000" />
+      <workItem from="1512397819221" duration="1920000" />
+      <workItem from="1512473396139" duration="1194000" />
+      <workItem from="1516110642952" duration="2536000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1966000" />
+    <option name="totallyTimeSpent" value="7620000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -155,29 +169,29 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-480" y="-1057" width="1165" height="1057" extended-state="0" />
+    <frame x="0" y="23" width="1680" height="950" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32994923" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24978541" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17321429" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -194,31 +208,169 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Adapter/Program.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1516623773613" expanded="false" signature="6:97" ph="..." />
+            <marker date="1516623773613" expanded="true" signature="186:2706" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="219:873" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="272:756" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="797:867" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="910:964" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="1001:1194" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="1035:1095" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="1122:1188" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="1223:1278" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="1316:1536" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="1351:1420" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="1447:1530" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="1546:1710" ph="/* Here comes the adapter! ... */" />
+            <marker date="1516623773613" expanded="true" signature="1748:2704" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="1795:1917" ph="/* Next, we need to get a reference to the object that we are adapting. ... */" />
+            <marker date="1516623773613" expanded="true" signature="1961:2015" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="2033:2185" ph="/* Now we need to implement all the methods in the interface. ... */" />
+            <marker date="1516623773613" expanded="true" signature="2213:2262" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="2280:2554" ph="/* Even though both interfaces have a fly() method, Turkeys fly in short spurts - ... */" />
+            <marker date="1516623773613" expanded="true" signature="2580:2698" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="2630:2688" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Adapter/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding>
-            <marker date="1512396356563" expanded="true" signature="6:97" ph="..." />
-            <marker date="1512396356563" expanded="true" signature="116:2637" ph="{...}" />
-            <marker date="1512396356563" expanded="true" signature="149:804" ph="{...}" />
-            <marker date="1512396356563" expanded="true" signature="202:687" ph="{...}" />
-            <marker date="1512396356563" expanded="true" signature="728:798" ph="{...}" />
-            <marker date="1512396356563" expanded="true" signature="841:895" ph="{...}" />
-            <marker date="1512396356563" expanded="true" signature="932:1125" ph="{...}" />
-            <marker date="1512396356563" expanded="true" signature="966:1026" ph="{...}" />
-            <marker date="1512396356563" expanded="true" signature="1053:1119" ph="{...}" />
-            <marker date="1512396356563" expanded="true" signature="1154:1209" ph="{...}" />
-            <marker date="1512396356563" expanded="true" signature="1247:1467" ph="{...}" />
-            <marker date="1512396356563" expanded="true" signature="1282:1351" ph="{...}" />
-            <marker date="1512396356563" expanded="true" signature="1378:1461" ph="{...}" />
-            <marker date="1512396356563" expanded="true" signature="1477:1641" ph="/* Here comes the adapter! ... */" />
-            <marker date="1512396356563" expanded="true" signature="1679:2635" ph="{...}" />
-            <marker date="1512396356563" expanded="true" signature="1726:1848" ph="/* Next, we need to get a reference to the object that we are adapting. ... */" />
-            <marker date="1512396356563" expanded="true" signature="1892:1946" ph="{...}" />
-            <marker date="1512396356563" expanded="true" signature="1964:2116" ph="/* Now we need to implement all the methods in the interface. ... */" />
-            <marker date="1512396356563" expanded="true" signature="2144:2193" ph="{...}" />
-            <marker date="1512396356563" expanded="true" signature="2211:2485" ph="/* Even though both interfaces have a fly() method, Turkeys fly in short spurts - ... */" />
-            <marker date="1512396356563" expanded="true" signature="2511:2629" ph="{...}" />
-            <marker date="1512396356563" expanded="true" signature="2561:2619" ph="{...}" />
+            <marker date="1516623773613" expanded="false" signature="6:97" ph="..." />
+            <marker date="1516623773613" expanded="true" signature="186:2706" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="219:873" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="272:756" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="797:867" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="910:964" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="1001:1194" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="1035:1095" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="1122:1188" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="1223:1278" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="1316:1536" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="1351:1420" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="1447:1530" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="1546:1710" ph="/* Here comes the adapter! ... */" />
+            <marker date="1516623773613" expanded="true" signature="1748:2704" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="1795:1917" ph="/* Next, we need to get a reference to the object that we are adapting. ... */" />
+            <marker date="1516623773613" expanded="true" signature="1961:2015" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="2033:2185" ph="/* Now we need to implement all the methods in the interface. ... */" />
+            <marker date="1516623773613" expanded="true" signature="2213:2262" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="2280:2554" ph="/* Even though both interfaces have a fly() method, Turkeys fly in short spurts - ... */" />
+            <marker date="1516623773613" expanded="true" signature="2580:2698" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="2630:2688" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Adapter.sln">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Adapter/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <marker date="1516623773613" expanded="false" signature="6:97" ph="..." />
+            <marker date="1516623773613" expanded="true" signature="186:2706" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="219:873" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="272:756" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="797:867" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="910:964" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="1001:1194" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="1035:1095" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="1122:1188" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="1223:1278" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="1316:1536" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="1351:1420" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="1447:1530" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="1546:1710" ph="/* Here comes the adapter! ... */" />
+            <marker date="1516623773613" expanded="true" signature="1748:2704" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="1795:1917" ph="/* Next, we need to get a reference to the object that we are adapting. ... */" />
+            <marker date="1516623773613" expanded="true" signature="1961:2015" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="2033:2185" ph="/* Now we need to implement all the methods in the interface. ... */" />
+            <marker date="1516623773613" expanded="true" signature="2213:2262" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="2280:2554" ph="/* Even though both interfaces have a fly() method, Turkeys fly in short spurts - ... */" />
+            <marker date="1516623773613" expanded="true" signature="2580:2698" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="2630:2688" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Adapter/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <marker date="1516623773613" expanded="false" signature="6:97" ph="..." />
+            <marker date="1516623773613" expanded="true" signature="186:2706" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="219:873" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="272:756" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="797:867" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="910:964" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="1001:1194" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="1035:1095" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="1122:1188" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="1223:1278" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="1316:1536" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="1351:1420" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="1447:1530" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="1546:1710" ph="/* Here comes the adapter! ... */" />
+            <marker date="1516623773613" expanded="true" signature="1748:2704" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="1795:1917" ph="/* Next, we need to get a reference to the object that we are adapting. ... */" />
+            <marker date="1516623773613" expanded="true" signature="1961:2015" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="2033:2185" ph="/* Now we need to implement all the methods in the interface. ... */" />
+            <marker date="1516623773613" expanded="true" signature="2213:2262" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="2280:2554" ph="/* Even though both interfaces have a fly() method, Turkeys fly in short spurts - ... */" />
+            <marker date="1516623773613" expanded="true" signature="2580:2698" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="2630:2688" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Adapter.sln">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Adapter/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="9" column="10" lean-forward="false" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+          <folding>
+            <marker date="1516623773613" expanded="false" signature="6:97" ph="..." />
+            <marker date="1516623773613" expanded="true" signature="186:2706" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="219:873" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="272:756" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="797:867" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="910:964" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="1001:1194" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="1035:1095" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="1122:1188" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="1223:1278" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="1316:1536" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="1351:1420" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="1447:1530" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="1546:1710" ph="/* Here comes the adapter! ... */" />
+            <marker date="1516623773613" expanded="true" signature="1748:2704" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="1795:1917" ph="/* Next, we need to get a reference to the object that we are adapting. ... */" />
+            <marker date="1516623773613" expanded="true" signature="1961:2015" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="2033:2185" ph="/* Now we need to implement all the methods in the interface. ... */" />
+            <marker date="1516623773613" expanded="true" signature="2213:2262" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="2280:2554" ph="/* Even though both interfaces have a fly() method, Turkeys fly in short spurts - ... */" />
+            <marker date="1516623773613" expanded="true" signature="2580:2698" ph="{...}" />
+            <marker date="1516623773613" expanded="true" signature="2630:2688" ph="{...}" />
           </folding>
         </state>
       </provider>
