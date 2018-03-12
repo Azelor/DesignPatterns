@@ -1,0 +1,6 @@
+/Users/kaarelsoot/Desktop/Kool/l6put88/adapter/AdapterPattern/bin/Debug/AdapterPattern.exe
+/Users/kaarelsoot/Desktop/Kool/l6put88/adapter/AdapterPattern/bin/Debug/AdapterPattern.pdb
+/Users/kaarelsoot/Desktop/Kool/l6put88/adapter/AdapterPattern/obj/Debug/AdapterPattern.csprojResolveAssemblyReference.cache
+/Users/kaarelsoot/Desktop/Kool/l6put88/adapter/AdapterPattern/obj/Debug/AdapterPattern.csproj.CoreCompileInputs.cache
+/Users/kaarelsoot/Desktop/Kool/l6put88/adapter/AdapterPattern/obj/Debug/AdapterPattern.exe
+/Users/kaarelsoot/Desktop/Kool/l6put88/adapter/AdapterPattern/obj/Debug/AdapterPattern.pdb
