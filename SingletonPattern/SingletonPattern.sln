@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingletonPattern", "SingletonPattern\SingletonPattern.csproj", "{4EFC29B5-73D7-4297-9E62-0408506A7B48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingletonTestProject", "SingletonTestProject\SingletonTestProject.csproj", "{9FF9B2E8-54E0-4755-94B0-D0CBEC528B4F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4EFC29B5-73D7-4297-9E62-0408506A7B48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EFC29B5-73D7-4297-9E62-0408506A7B48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EFC29B5-73D7-4297-9E62-0408506A7B48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EFC29B5-73D7-4297-9E62-0408506A7B48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FF9B2E8-54E0-4755-94B0-D0CBEC528B4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FF9B2E8-54E0-4755-94B0-D0CBEC528B4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FF9B2E8-54E0-4755-94B0-D0CBEC528B4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FF9B2E8-54E0-4755-94B0-D0CBEC528B4F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
