@@ -1,0 +1,16 @@
+/Users/kaarelsoot/DesignPatterns/AdapterPattern/AdapterTestProject/bin/Debug/netcoreapp2.0/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+/Users/kaarelsoot/DesignPatterns/AdapterPattern/AdapterTestProject/bin/Debug/netcoreapp2.0/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+/Users/kaarelsoot/DesignPatterns/AdapterPattern/AdapterTestProject/bin/Debug/netcoreapp2.0/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+/Users/kaarelsoot/DesignPatterns/AdapterPattern/AdapterTestProject/bin/Debug/netcoreapp2.0/AdapterTestProject.deps.json
+/Users/kaarelsoot/DesignPatterns/AdapterPattern/AdapterTestProject/bin/Debug/netcoreapp2.0/AdapterTestProject.runtimeconfig.json
+/Users/kaarelsoot/DesignPatterns/AdapterPattern/AdapterTestProject/bin/Debug/netcoreapp2.0/AdapterTestProject.runtimeconfig.dev.json
+/Users/kaarelsoot/DesignPatterns/AdapterPattern/AdapterTestProject/bin/Debug/netcoreapp2.0/AdapterTestProject.dll
+/Users/kaarelsoot/DesignPatterns/AdapterPattern/AdapterTestProject/bin/Debug/netcoreapp2.0/AdapterTestProject.pdb
+/Users/kaarelsoot/DesignPatterns/AdapterPattern/AdapterTestProject/bin/Debug/netcoreapp2.0/AdapterPattern.exe
+/Users/kaarelsoot/DesignPatterns/AdapterPattern/AdapterTestProject/bin/Debug/netcoreapp2.0/AdapterPattern.pdb
+/Users/kaarelsoot/DesignPatterns/AdapterPattern/AdapterTestProject/obj/Debug/netcoreapp2.0/AdapterTestProject.csprojResolveAssemblyReference.cache
+/Users/kaarelsoot/DesignPatterns/AdapterPattern/AdapterTestProject/obj/Debug/netcoreapp2.0/AdapterTestProject.csproj.CoreCompileInputs.cache
+/Users/kaarelsoot/DesignPatterns/AdapterPattern/AdapterTestProject/obj/Debug/netcoreapp2.0/AdapterTestProject.AssemblyInfoInputs.cache
+/Users/kaarelsoot/DesignPatterns/AdapterPattern/AdapterTestProject/obj/Debug/netcoreapp2.0/AdapterTestProject.AssemblyInfo.cs
+/Users/kaarelsoot/DesignPatterns/AdapterPattern/AdapterTestProject/obj/Debug/netcoreapp2.0/AdapterTestProject.dll
+/Users/kaarelsoot/DesignPatterns/AdapterPattern/AdapterTestProject/obj/Debug/netcoreapp2.0/AdapterTestProject.pdb
