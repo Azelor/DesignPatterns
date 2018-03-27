@@ -7,7 +7,7 @@ namespace AdapterPattern
     internal class Program
     {
         public static void Main(string[] args)
-        {
+        {   
             IStudentList adapter = new StudentAdapter();
             
             StudentData student1 = new StudentData();

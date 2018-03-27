@@ -1,0 +1,11 @@
+/Users/kaarelsoot/DesignPatterns/FactoryMethodPattern/FactoryMethod/bin/Debug/netcoreapp2.0/FactoryMethod.deps.json
+/Users/kaarelsoot/DesignPatterns/FactoryMethodPattern/FactoryMethod/bin/Debug/netcoreapp2.0/FactoryMethod.runtimeconfig.json
+/Users/kaarelsoot/DesignPatterns/FactoryMethodPattern/FactoryMethod/bin/Debug/netcoreapp2.0/FactoryMethod.runtimeconfig.dev.json
+/Users/kaarelsoot/DesignPatterns/FactoryMethodPattern/FactoryMethod/bin/Debug/netcoreapp2.0/FactoryMethod.dll
+/Users/kaarelsoot/DesignPatterns/FactoryMethodPattern/FactoryMethod/bin/Debug/netcoreapp2.0/FactoryMethod.pdb
+/Users/kaarelsoot/DesignPatterns/FactoryMethodPattern/FactoryMethod/obj/Debug/netcoreapp2.0/FactoryMethod.csprojResolveAssemblyReference.cache
+/Users/kaarelsoot/DesignPatterns/FactoryMethodPattern/FactoryMethod/obj/Debug/netcoreapp2.0/FactoryMethod.csproj.CoreCompileInputs.cache
+/Users/kaarelsoot/DesignPatterns/FactoryMethodPattern/FactoryMethod/obj/Debug/netcoreapp2.0/FactoryMethod.AssemblyInfoInputs.cache
+/Users/kaarelsoot/DesignPatterns/FactoryMethodPattern/FactoryMethod/obj/Debug/netcoreapp2.0/FactoryMethod.AssemblyInfo.cs
+/Users/kaarelsoot/DesignPatterns/FactoryMethodPattern/FactoryMethod/obj/Debug/netcoreapp2.0/FactoryMethod.dll
+/Users/kaarelsoot/DesignPatterns/FactoryMethodPattern/FactoryMethod/obj/Debug/netcoreapp2.0/FactoryMethod.pdb
