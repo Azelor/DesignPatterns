@@ -12,11 +12,11 @@ namespace DeliveryApplication
 
         private void MakeDelivery()
         {
-            IDeliveryVehicle deliveryBike = new DeliveryBike();
-            IDeliveryVehicle deliveryCar = new DeliveryCar();
-            IDeliveryVehicle deliveryVan = new DeliveryVan();
-            IDeliveryVehicle deliveryTruck = new DeliveryTruck();
-            IDeliveryVehicle parcelLocker   = new ParcelLockerAdapter(new ParcelLocker());
+            IDeliveryVehicle deliveryBike = new DeliveryCounter(new DeliveryBike());
+            IDeliveryVehicle deliveryCar = new DeliveryCounter(new DeliveryCar());
+            IDeliveryVehicle deliveryVan = new DeliveryCounter(new DeliveryVan());
+            IDeliveryVehicle deliveryTruck = new DeliveryCounter(new DeliveryTruck());
+            IDeliveryVehicle parcelLocker   = new DeliveryCounter(new ParcelLockerAdapter(new ParcelLocker()));
             
             Console.WriteLine("Deliveries:");
             
@@ -25,6 +25,10 @@ namespace DeliveryApplication
             MakeDelivery(deliveryVan);
             MakeDelivery(deliveryTruck);
             MakeDelivery(parcelLocker);
+
+            Console.WriteLine("\nTotal parcels delivered (including pick-ups) : " + DeliveryCounter.NumberOfDeliveries);
+            
+            Console.ReadKey(); // Wait for user input
         }
 
         private void MakeDelivery(IDeliveryVehicle vehicle)
@@ -32,6 +36,8 @@ namespace DeliveryApplication
             vehicle.Deliver();
         }
     }
+    
+    #region Deliver Vehicles
 
     public interface IDeliveryVehicle
     {
@@ -69,6 +75,10 @@ namespace DeliveryApplication
             Console.WriteLine("Truck makes a delivery");
         }
     }
+    
+    #endregion
+    
+    #region Parcel Locker
 
     public class ParcelLocker
     {
@@ -92,4 +102,27 @@ namespace DeliveryApplication
             _parcelLocker.ProvidePickUp();
         }
     }
+    
+    #endregion
+    
+    #region Delivery Counter
+
+    public class DeliveryCounter : IDeliveryVehicle
+    {
+        private IDeliveryVehicle _vehicle;
+        public static int NumberOfDeliveries { get; private set; }
+
+        public DeliveryCounter(IDeliveryVehicle vehicle)
+        {
+            _vehicle = vehicle;
+        }
+
+        public void Deliver()
+        {
+            _vehicle.Deliver();
+            NumberOfDeliveries++;
+        }
+    }
+    
+    #endregion
 }
