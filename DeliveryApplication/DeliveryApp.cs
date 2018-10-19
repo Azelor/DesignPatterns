@@ -6,16 +6,20 @@ namespace DeliveryApplication
     {
         public static void Main(string[] args)
         {
+            AbstractDeliveryVehicleFactory factory = new CountingDeliveryVehicleFactory();
+            
             var deliveryApp = new DeliveryApp();
-            deliveryApp.MakeDelivery();
+            deliveryApp.MakeDelivery(factory);
+            
+            Console.ReadKey(); // Wait for user input
         }
 
-        private void MakeDelivery()
+        private void MakeDelivery(AbstractDeliveryVehicleFactory factory)
         {
-            IDeliveryVehicle deliveryBike = new DeliveryCounter(new DeliveryBike());
-            IDeliveryVehicle deliveryCar = new DeliveryCounter(new DeliveryCar());
-            IDeliveryVehicle deliveryVan = new DeliveryCounter(new DeliveryVan());
-            IDeliveryVehicle deliveryTruck = new DeliveryCounter(new DeliveryTruck());
+            IDeliveryVehicle deliveryBike = factory.CreateDeliveryBike();
+            IDeliveryVehicle deliveryCar = factory.CreateDeliveryCar();
+            IDeliveryVehicle deliveryVan = factory.CreateDeliveryVan();
+            IDeliveryVehicle deliveryTruck = factory.CreateDeliveryTruck();
             IDeliveryVehicle parcelLocker   = new DeliveryCounter(new ParcelLockerAdapter(new ParcelLocker()));
             
             Console.WriteLine("Deliveries:");
@@ -27,8 +31,6 @@ namespace DeliveryApplication
             MakeDelivery(parcelLocker);
 
             Console.WriteLine("\nTotal parcels delivered (including pick-ups) : " + DeliveryCounter.NumberOfDeliveries);
-            
-            Console.ReadKey(); // Wait for user input
         }
 
         private void MakeDelivery(IDeliveryVehicle vehicle)
@@ -37,7 +39,7 @@ namespace DeliveryApplication
         }
     }
     
-    #region Deliver Vehicles
+    #region Delivery Vehicles
 
     public interface IDeliveryVehicle
     {
@@ -121,6 +123,64 @@ namespace DeliveryApplication
         {
             _vehicle.Deliver();
             NumberOfDeliveries++;
+        }
+    }
+    
+    #endregion
+    
+    #region Factory
+
+    public abstract class AbstractDeliveryVehicleFactory
+    {
+        public abstract IDeliveryVehicle CreateDeliveryBike();
+        public abstract IDeliveryVehicle CreateDeliveryCar();
+        public abstract IDeliveryVehicle CreateDeliveryVan();
+        public abstract IDeliveryVehicle CreateDeliveryTruck();
+    }
+
+    public class DeliveryVehicleFactory : AbstractDeliveryVehicleFactory
+    {
+        public override IDeliveryVehicle CreateDeliveryBike()
+        {
+            return new DeliveryBike();
+        }
+        
+        public override IDeliveryVehicle CreateDeliveryCar()
+        {
+            return new DeliveryCar();
+        }
+        
+        public override IDeliveryVehicle CreateDeliveryVan()
+        {
+            return new DeliveryVan();
+        }
+        
+        public override IDeliveryVehicle CreateDeliveryTruck()
+        {
+            return new DeliveryTruck();
+        }
+    }
+    
+    public class CountingDeliveryVehicleFactory : AbstractDeliveryVehicleFactory
+    {
+        public override IDeliveryVehicle CreateDeliveryBike()
+        {
+            return new DeliveryCounter(new DeliveryBike());
+        }
+        
+        public override IDeliveryVehicle CreateDeliveryCar()
+        {
+            return new DeliveryCounter(new DeliveryCar());
+        }
+        
+        public override IDeliveryVehicle CreateDeliveryVan()
+        {
+            return new DeliveryCounter(new DeliveryVan());
+        }
+        
+        public override IDeliveryVehicle CreateDeliveryTruck()
+        {
+            return new DeliveryCounter(new DeliveryTruck());
         }
     }
     
