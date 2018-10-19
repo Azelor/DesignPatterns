@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace DeliveryApplication
 {
@@ -22,13 +23,16 @@ namespace DeliveryApplication
             IDeliveryVehicle deliveryTruck = factory.CreateDeliveryTruck();
             IDeliveryVehicle parcelLocker = factory.CreateParcelLocker();
             
-            Console.WriteLine("Deliveries:");
+            Fleet fleetOfDeliveryVehicles = new Fleet();
+
+            fleetOfDeliveryVehicles.Add(deliveryBike);
+            fleetOfDeliveryVehicles.Add(deliveryCar);
+            fleetOfDeliveryVehicles.Add(deliveryVan);
+            fleetOfDeliveryVehicles.Add(deliveryTruck);
+            fleetOfDeliveryVehicles.Add(parcelLocker);
             
-            MakeDelivery(deliveryBike);
-            MakeDelivery(deliveryCar);
-            MakeDelivery(deliveryVan);
-            MakeDelivery(deliveryTruck);
-            MakeDelivery(parcelLocker);
+            Console.WriteLine("Deliveries:");
+            MakeDelivery(fleetOfDeliveryVehicles);
 
             Console.WriteLine("\nTotal parcels delivered (including pick-ups) : " + DeliveryCounter.NumberOfDeliveries);
         }
@@ -164,6 +168,28 @@ namespace DeliveryApplication
         public override IDeliveryVehicle CreateParcelLocker()
         {
             return new DeliveryCounter(new ParcelLockerAdapter(new ParcelLocker()));
+        }
+    }
+    
+    #endregion
+    
+    #region Delivery Fleet
+
+    public class Fleet : IDeliveryVehicle
+    {
+        List<IDeliveryVehicle> _vehicles = new List<IDeliveryVehicle>();
+
+        public void Add(IDeliveryVehicle vehicle)
+        {
+            _vehicles.Add(vehicle);
+        }
+
+        public void Deliver()
+        {
+            foreach (IDeliveryVehicle vehicle in _vehicles)
+            {
+                vehicle.Deliver();
+            }
         }
     }
     
