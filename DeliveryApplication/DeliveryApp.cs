@@ -8,65 +8,29 @@ namespace DeliveryApplication
         {
             var deliveryApp = new DeliveryApp();
             deliveryApp.MakeDelivery();
-
         }
 
         private void MakeDelivery()
         {
-            IDeliveryVehicle deliveryBike = new DeliveryBike();
-            IDeliveryVehicle deliveryCar = new DeliveryCar();
-            IDeliveryVehicle deliveryVan = new DeliveryVan();
-            IDeliveryVehicle deliveryTruck = new DeliveryTruck();
-            
+            // TODO: Create vehicles
+
             Console.WriteLine("Deliveries:");
             
-            MakeDelivery(deliveryBike);
-            MakeDelivery(deliveryCar);
-            MakeDelivery(deliveryVan);
-            MakeDelivery(deliveryTruck);
+            // TODO: Make deliveries
+            
         }
-
+        
         private void MakeDelivery(IDeliveryVehicle vehicle)
         {
             vehicle.Deliver();
         }
-        
     }
 
     public interface IDeliveryVehicle
     {
         void Deliver();
     }
-
-    public class DeliveryBike : IDeliveryVehicle
-    {
-        public void Deliver()
-        {
-            Console.WriteLine("Bike makes a delivery");
-        }
-    }
     
-    public class DeliveryCar : IDeliveryVehicle
-    {
-        public void Deliver()
-        {
-            Console.WriteLine("Car makes a delivery");
-        }
-    }
+    // TODO: Create vehicle classes that implement IDeliveryVehicle
     
-    public class DeliveryVan : IDeliveryVehicle
-    {
-        public void Deliver()
-        {
-            Console.WriteLine("Van makes a delivery");
-        }
-    }
-    
-    public class DeliveryTruck : IDeliveryVehicle
-    {
-        public void Deliver()
-        {
-            Console.WriteLine("Truck makes a delivery");
-        }
-    }
 }
