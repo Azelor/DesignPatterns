@@ -20,7 +20,7 @@ namespace DeliveryApplication
             IDeliveryVehicle deliveryCar = factory.CreateDeliveryCar();
             IDeliveryVehicle deliveryVan = factory.CreateDeliveryVan();
             IDeliveryVehicle deliveryTruck = factory.CreateDeliveryTruck();
-            IDeliveryVehicle parcelLocker   = new DeliveryCounter(new ParcelLockerAdapter(new ParcelLocker()));
+            IDeliveryVehicle parcelLocker = factory.CreateParcelLocker();
             
             Console.WriteLine("Deliveries:");
             
@@ -136,29 +136,7 @@ namespace DeliveryApplication
         public abstract IDeliveryVehicle CreateDeliveryCar();
         public abstract IDeliveryVehicle CreateDeliveryVan();
         public abstract IDeliveryVehicle CreateDeliveryTruck();
-    }
-
-    public class DeliveryVehicleFactory : AbstractDeliveryVehicleFactory
-    {
-        public override IDeliveryVehicle CreateDeliveryBike()
-        {
-            return new DeliveryBike();
-        }
-        
-        public override IDeliveryVehicle CreateDeliveryCar()
-        {
-            return new DeliveryCar();
-        }
-        
-        public override IDeliveryVehicle CreateDeliveryVan()
-        {
-            return new DeliveryVan();
-        }
-        
-        public override IDeliveryVehicle CreateDeliveryTruck()
-        {
-            return new DeliveryTruck();
-        }
+        public abstract IDeliveryVehicle CreateParcelLocker();
     }
     
     public class CountingDeliveryVehicleFactory : AbstractDeliveryVehicleFactory
@@ -181,6 +159,11 @@ namespace DeliveryApplication
         public override IDeliveryVehicle CreateDeliveryTruck()
         {
             return new DeliveryCounter(new DeliveryTruck());
+        }
+        
+        public override IDeliveryVehicle CreateParcelLocker()
+        {
+            return new DeliveryCounter(new ParcelLockerAdapter(new ParcelLocker()));
         }
     }
     
