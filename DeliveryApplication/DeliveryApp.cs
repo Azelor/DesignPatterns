@@ -23,7 +23,7 @@ namespace DeliveryApplication
             IDeliveryVehicle deliveryTruck = factory.CreateDeliveryTruck();
             IDeliveryVehicle parcelLocker = factory.CreateParcelLocker();
             
-            Fleet fleetOfDeliveryVehicles = new Fleet();
+            var fleetOfDeliveryVehicles = new Fleet();
 
             fleetOfDeliveryVehicles.Add(deliveryBike);
             fleetOfDeliveryVehicles.Add(deliveryCar);
@@ -33,6 +33,19 @@ namespace DeliveryApplication
             
             Console.WriteLine("Deliveries:");
             MakeDelivery(fleetOfDeliveryVehicles);
+            
+            var fleetOfTrucks = new Fleet();
+            
+            IDeliveryVehicle truckOne = factory.CreateDeliveryTruck();
+            IDeliveryVehicle truckTwo = factory.CreateDeliveryTruck();
+            IDeliveryVehicle truckThree = factory.CreateDeliveryTruck();
+            
+            fleetOfTrucks.Add(truckOne);
+            fleetOfTrucks.Add(truckTwo);
+            fleetOfTrucks.Add(truckThree);
+
+            Console.WriteLine("\nDeliveries made by the new fleet of trucks:");
+            MakeDelivery(fleetOfTrucks);
 
             Console.WriteLine("\nTotal parcels delivered (including pick-ups) : " + DeliveryCounter.NumberOfDeliveries);
         }
