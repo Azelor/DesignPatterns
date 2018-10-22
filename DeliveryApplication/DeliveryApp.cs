@@ -16,13 +16,15 @@ namespace DeliveryApplication
             IDeliveryVehicle deliveryCar = new DeliveryCar();
             IDeliveryVehicle deliveryVan = new DeliveryVan();
             IDeliveryVehicle deliveryTruck = new DeliveryTruck();
-           
+            IDeliveryVehicle locker = new ParcelLockerAdapter(new ParcelLocker());
+            
             Console.WriteLine("Deliveries:");
-           
+            
             MakeDelivery(deliveryBike);
             MakeDelivery(deliveryCar);
             MakeDelivery(deliveryVan);
             MakeDelivery(deliveryTruck);
+            MakeDelivery(locker);
         }
 
         private void MakeDelivery(IDeliveryVehicle vehicle)
@@ -65,6 +67,29 @@ namespace DeliveryApplication
         public void Deliver()
         {
             Console.WriteLine("Truck makes a delivery");
+        }
+    }
+    
+    public class ParcelLocker
+    {
+        public void ProvidePickup()
+        {
+            Console.WriteLine("Package is picked up from a parcel locker");
+        }
+    }
+    
+    public class ParcelLockerAdapter : IDeliveryVehicle
+    {
+        private ParcelLocker _parcelLocker;
+
+        public ParcelLockerAdapter(ParcelLocker parcelLocker)
+        {
+            _parcelLocker = parcelLocker;
+        }
+
+        public void Deliver()
+        {
+            _parcelLocker.ProvidePickup();
         }
     }
 }
