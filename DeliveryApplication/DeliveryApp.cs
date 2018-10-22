@@ -7,10 +7,10 @@ namespace DeliveryApplication
         public static void Main(string[] args) // main method
         {
             var deliveryApp = new DeliveryApp();
-            deliveryApp.BeginOperation();
+            deliveryApp.PlanDelivery();
         }
 
-        private void BeginOperation()
+        private void PlanDelivery()
         {
             IDeliveryVehicle deliveryBike = new DeliveryBike();
             IDeliveryVehicle deliveryCar = new DeliveryCar();
