@@ -4,7 +4,7 @@ namespace DeliveryApplication
 {
     class DeliveryApp
     {
-        public static void Main(string[] args) // main method
+        public static void Main(string[] args)
         {
             var deliveryApp = new DeliveryApp();
             deliveryApp.PlanDelivery();
@@ -12,11 +12,11 @@ namespace DeliveryApplication
 
         private void PlanDelivery()
         {
-            IDeliveryVehicle deliveryBike = new DeliveryBike();
-            IDeliveryVehicle deliveryCar = new DeliveryCar();
-            IDeliveryVehicle deliveryVan = new DeliveryVan();
-            IDeliveryVehicle deliveryTruck = new DeliveryTruck();
-            IDeliveryVehicle locker = new ParcelLockerAdapter(new ParcelLocker());
+            IDeliveryVehicle deliveryBike = new DeliveryCounter(new DeliveryBike());
+            IDeliveryVehicle deliveryCar = new DeliveryCounter(new DeliveryCar());
+            IDeliveryVehicle deliveryVan = new DeliveryCounter(new DeliveryVan());
+            IDeliveryVehicle deliveryTruck = new DeliveryCounter(new DeliveryTruck());
+            IDeliveryVehicle locker = new DeliveryCounter(new ParcelLockerAdapter(new ParcelLocker()));
             
             Console.WriteLine("Deliveries:");
             
@@ -25,6 +25,8 @@ namespace DeliveryApplication
             MakeDelivery(deliveryVan);
             MakeDelivery(deliveryTruck);
             MakeDelivery(locker);
+
+            Console.WriteLine("\nTotal parcels delivered (including pick-ups): " + DeliveryCounter.NumberOfDeliveries);
         }
 
         private void MakeDelivery(IDeliveryVehicle vehicle)
@@ -32,6 +34,8 @@ namespace DeliveryApplication
             vehicle.Deliver();
         }
     }
+    
+    #region Deliver Vehicles
 
     public interface IDeliveryVehicle
     {
@@ -45,7 +49,7 @@ namespace DeliveryApplication
             Console.WriteLine("Bike makes a delivery");
         }
     }
-   
+    
     public class DeliveryCar : IDeliveryVehicle
     {
         public void Deliver()
@@ -53,7 +57,7 @@ namespace DeliveryApplication
             Console.WriteLine("Car makes a delivery");
         }
     }
-   
+    
     public class DeliveryVan : IDeliveryVehicle
     {
         public void Deliver()
@@ -61,7 +65,7 @@ namespace DeliveryApplication
             Console.WriteLine("Van makes a delivery");
         }
     }
-   
+    
     public class DeliveryTruck : IDeliveryVehicle
     {
         public void Deliver()
@@ -70,14 +74,18 @@ namespace DeliveryApplication
         }
     }
     
+    #endregion
+    
+    #region Parcel Locker
+
     public class ParcelLocker
     {
-        public void ProvidePickup()
+        public void ProvidePickUp()
         {
             Console.WriteLine("Package is picked up from a parcel locker");
         }
     }
-    
+
     public class ParcelLockerAdapter : IDeliveryVehicle
     {
         private ParcelLocker _parcelLocker;
@@ -89,7 +97,30 @@ namespace DeliveryApplication
 
         public void Deliver()
         {
-            _parcelLocker.ProvidePickup();
+            _parcelLocker.ProvidePickUp();
         }
     }
+    
+    #endregion
+    
+    #region Delivery Counter
+
+    public class DeliveryCounter : IDeliveryVehicle
+    {
+        private IDeliveryVehicle _vehicle;
+        public static int NumberOfDeliveries { get; private set; }
+
+        public DeliveryCounter(IDeliveryVehicle vehicle)
+        {
+            _vehicle = vehicle;
+        }
+
+        public void Deliver()
+        {
+            _vehicle.Deliver();
+            NumberOfDeliveries++;
+        }
+    }
+    
+    #endregion
 }
