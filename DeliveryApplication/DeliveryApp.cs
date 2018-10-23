@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace DeliveryApplication
 {
@@ -20,14 +21,31 @@ namespace DeliveryApplication
             IDeliveryVehicle deliveryTruck = factory.CreateDeliveryTruck();
             IDeliveryVehicle locker = factory.CreateParcelLocker();
             
+            Fleet fleetOfVehicles = new Fleet();
+            
+            fleetOfVehicles.Add(deliveryBike);
+            fleetOfVehicles.Add(deliveryCar);
+            fleetOfVehicles.Add(deliveryVan);
+            fleetOfVehicles.Add(deliveryTruck);
+            fleetOfVehicles.Add(locker);
+            
             Console.WriteLine("Deliveries:");
             
-            MakeDelivery(deliveryBike);
-            MakeDelivery(deliveryCar);
-            MakeDelivery(deliveryVan);
-            MakeDelivery(deliveryTruck);
-            MakeDelivery(locker);
+            MakeDelivery(fleetOfVehicles);
+            
+            var fleetOfTrucks = new Fleet();
+            
+            IDeliveryVehicle truckOne = factory.CreateDeliveryTruck();
+            IDeliveryVehicle truckTwo = factory.CreateDeliveryTruck();
+            IDeliveryVehicle truckThree = factory.CreateDeliveryTruck();
+            
+            fleetOfTrucks.Add(truckOne);
+            fleetOfTrucks.Add(truckTwo);
+            fleetOfTrucks.Add(truckThree);
 
+            Console.WriteLine("\nDeliveries made by the new fleet of trucks:");
+            MakeDelivery(fleetOfTrucks);
+            
             Console.WriteLine("\nTotal parcels delivered (including pick-ups): " + DeliveryCounter.NumberOfDeliveries);
         }
 
@@ -162,6 +180,28 @@ namespace DeliveryApplication
         public override IDeliveryVehicle CreateParcelLocker()
         {
             return new DeliveryCounter(new ParcelLockerAdapter(new ParcelLocker()));
+        }
+    }
+    
+    #endregion
+    
+    #region Delivery Fleet
+
+    public class Fleet : IDeliveryVehicle
+    {
+        List<IDeliveryVehicle> _vehicles = new List<IDeliveryVehicle>();
+
+        public void Add(IDeliveryVehicle vehicle)
+        {
+            _vehicles.Add(vehicle);
+        }
+
+        public void Deliver()
+        {
+            foreach (IDeliveryVehicle vehicle in _vehicles)
+            {
+                vehicle.Deliver();
+            }
         }
     }
     
