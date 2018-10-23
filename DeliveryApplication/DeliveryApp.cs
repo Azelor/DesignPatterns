@@ -6,17 +6,19 @@ namespace DeliveryApplication
     {
         public static void Main(string[] args)
         {
+            AbstractDeliveryVehicleFactory factory = new CountingDeliveryVehicleFactory();
+            
             var deliveryApp = new DeliveryApp();
-            deliveryApp.PlanDelivery();
+            deliveryApp.PlanDelivery(factory);
         }
 
-        private void PlanDelivery()
+        private void PlanDelivery(AbstractDeliveryVehicleFactory factory)
         {
-            IDeliveryVehicle deliveryBike = new DeliveryCounter(new DeliveryBike());
-            IDeliveryVehicle deliveryCar = new DeliveryCounter(new DeliveryCar());
-            IDeliveryVehicle deliveryVan = new DeliveryCounter(new DeliveryVan());
-            IDeliveryVehicle deliveryTruck = new DeliveryCounter(new DeliveryTruck());
-            IDeliveryVehicle locker = new DeliveryCounter(new ParcelLockerAdapter(new ParcelLocker()));
+            IDeliveryVehicle deliveryBike = factory.CreateDeliveryBike();
+            IDeliveryVehicle deliveryCar = factory.CreateDeliveryCar();
+            IDeliveryVehicle deliveryVan = factory.CreateDeliveryVan();
+            IDeliveryVehicle deliveryTruck = factory.CreateDeliveryTruck();
+            IDeliveryVehicle locker = factory.CreateParcelLocker();
             
             Console.WriteLine("Deliveries:");
             
@@ -119,6 +121,47 @@ namespace DeliveryApplication
         {
             _vehicle.Deliver();
             NumberOfDeliveries++;
+        }
+    }
+    
+    #endregion
+    
+    #region Factory
+
+    public abstract class AbstractDeliveryVehicleFactory
+    {
+        public abstract IDeliveryVehicle CreateDeliveryBike();
+        public abstract IDeliveryVehicle CreateDeliveryCar();
+        public abstract IDeliveryVehicle CreateDeliveryVan();
+        public abstract IDeliveryVehicle CreateDeliveryTruck();
+        public abstract IDeliveryVehicle CreateParcelLocker();
+    }
+    
+    public class CountingDeliveryVehicleFactory : AbstractDeliveryVehicleFactory
+    {
+        public override IDeliveryVehicle CreateDeliveryBike()
+        {
+            return new DeliveryCounter(new DeliveryBike());
+        }
+        
+        public override IDeliveryVehicle CreateDeliveryCar()
+        {
+            return new DeliveryCounter(new DeliveryCar());
+        }
+        
+        public override IDeliveryVehicle CreateDeliveryVan()
+        {
+            return new DeliveryCounter(new DeliveryVan());
+        }
+        
+        public override IDeliveryVehicle CreateDeliveryTruck()
+        {
+            return new DeliveryCounter(new DeliveryTruck());
+        }
+        
+        public override IDeliveryVehicle CreateParcelLocker()
+        {
+            return new DeliveryCounter(new ParcelLockerAdapter(new ParcelLocker()));
         }
     }
     
