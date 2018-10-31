@@ -1,0 +1,9 @@
+/Users/kaarel/RiderProjects/DeliveryApplication/DeliveryApplication/bin/Debug/netcoreapp2.1/DeliveryApplication.deps.json
+/Users/kaarel/RiderProjects/DeliveryApplication/DeliveryApplication/bin/Debug/netcoreapp2.1/DeliveryApplication.dll
+/Users/kaarel/RiderProjects/DeliveryApplication/DeliveryApplication/bin/Debug/netcoreapp2.1/DeliveryApplication.pdb
+/Users/kaarel/RiderProjects/DeliveryApplication/DeliveryApplication/obj/Debug/netcoreapp2.1/DeliveryApplication.csprojAssemblyReference.cache
+/Users/kaarel/RiderProjects/DeliveryApplication/DeliveryApplication/obj/Debug/netcoreapp2.1/DeliveryApplication.csproj.CoreCompileInputs.cache
+/Users/kaarel/RiderProjects/DeliveryApplication/DeliveryApplication/obj/Debug/netcoreapp2.1/DeliveryApplication.AssemblyInfoInputs.cache
+/Users/kaarel/RiderProjects/DeliveryApplication/DeliveryApplication/obj/Debug/netcoreapp2.1/DeliveryApplication.AssemblyInfo.cs
+/Users/kaarel/RiderProjects/DeliveryApplication/DeliveryApplication/obj/Debug/netcoreapp2.1/DeliveryApplication.dll
+/Users/kaarel/RiderProjects/DeliveryApplication/DeliveryApplication/obj/Debug/netcoreapp2.1/DeliveryApplication.pdb

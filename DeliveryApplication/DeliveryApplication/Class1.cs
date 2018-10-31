@@ -10,29 +10,28 @@ namespace DeliveryApplication
             AbstractDeliveryVehicleFactory factory = new CountingDeliveryVehicleFactory();
             
             var deliveryApp = new DeliveryApp();
-            deliveryApp.MakeDelivery(factory);
-            
-            Console.ReadKey(); // Wait for user input
+            deliveryApp.PlanDelivery(factory);
         }
 
-        private void MakeDelivery(AbstractDeliveryVehicleFactory factory)
+        public void PlanDelivery(AbstractDeliveryVehicleFactory factory)
         {
             IDeliveryVehicle deliveryBike = factory.CreateDeliveryBike();
             IDeliveryVehicle deliveryCar = factory.CreateDeliveryCar();
             IDeliveryVehicle deliveryVan = factory.CreateDeliveryVan();
             IDeliveryVehicle deliveryTruck = factory.CreateDeliveryTruck();
-            IDeliveryVehicle parcelLocker = factory.CreateParcelLocker();
+            IDeliveryVehicle locker = factory.CreateParcelLocker();
             
-            var fleetOfDeliveryVehicles = new Fleet();
-
-            fleetOfDeliveryVehicles.Add(deliveryBike);
-            fleetOfDeliveryVehicles.Add(deliveryCar);
-            fleetOfDeliveryVehicles.Add(deliveryVan);
-            fleetOfDeliveryVehicles.Add(deliveryTruck);
-            fleetOfDeliveryVehicles.Add(parcelLocker);
+            Fleet fleetOfVehicles = new Fleet();
+            
+            fleetOfVehicles.Add(deliveryBike);
+            fleetOfVehicles.Add(deliveryCar);
+            fleetOfVehicles.Add(deliveryVan);
+            fleetOfVehicles.Add(deliveryTruck);
+            fleetOfVehicles.Add(locker);
             
             Console.WriteLine("Deliveries:");
-            MakeDelivery(fleetOfDeliveryVehicles);
+            
+            MakeDelivery(fleetOfVehicles);
             
             var fleetOfTrucks = new Fleet();
             
@@ -43,14 +42,11 @@ namespace DeliveryApplication
             fleetOfTrucks.Add(truckOne);
             fleetOfTrucks.Add(truckTwo);
             fleetOfTrucks.Add(truckThree);
-            
-            var deliveryTracker = new DeliveryTracker();
-            fleetOfTrucks.RegisterObserver(deliveryTracker);
 
             Console.WriteLine("\nDeliveries made by the new fleet of trucks:");
             MakeDelivery(fleetOfTrucks);
-
-            Console.WriteLine("\nTotal parcels delivered (including pick-ups) : " + DeliveryCounter.NumberOfDeliveries);
+            
+            Console.WriteLine("\nTotal parcels delivered (including pick-ups): " + DeliveryCounter.NumberOfDeliveries);
         }
 
         private void MakeDelivery(IDeliveryVehicle vehicle)
@@ -59,115 +55,42 @@ namespace DeliveryApplication
         }
     }
     
-    #region Delivery Vehicles
+    #region Deliver Vehicles
 
-    public interface IDeliveryVehicle : IVehicleObservable
+    public interface IDeliveryVehicle
     {
         void Deliver();
     }
 
     public class DeliveryBike : IDeliveryVehicle
     {
-        private Observable _observable;
-        
-        public DeliveryBike() 
-        {
-            _observable = new Observable(this);
-        }
         public void Deliver()
         {
             Console.WriteLine("Bike makes a delivery");
-            NotifyObservers();
-        }
-        
-        public void RegisterObserver(IObserver observer) 
-        {
-            _observable.RegisterObserver(observer);
-        }
- 
-        public void NotifyObservers() 
-        {
-            _observable.NotifyObservers();
         }
     }
-
+    
     public class DeliveryCar : IDeliveryVehicle
     {
-        private Observable _observable;
-        
-        public DeliveryCar() 
-        {
-            _observable = new Observable(this);
-        }
         public void Deliver()
         {
             Console.WriteLine("Car makes a delivery");
-            NotifyObservers();
-        }
-        
-        public void RegisterObserver(IObserver observer) 
-        {
-            _observable.RegisterObserver(observer);
-        }
- 
-        public void NotifyObservers() 
-        {
-            _observable.NotifyObservers();
         }
     }
     
     public class DeliveryVan : IDeliveryVehicle
     {
-        private Observable _observable;
-        
-        public DeliveryVan() 
-        {
-            _observable = new Observable(this);
-        }
         public void Deliver()
         {
             Console.WriteLine("Van makes a delivery");
-            NotifyObservers();
-        }
-        
-        public void RegisterObserver(IObserver observer) 
-        {
-            _observable.RegisterObserver(observer);
-        }
- 
-        public void NotifyObservers() 
-        {
-            _observable.NotifyObservers();
         }
     }
     
     public class DeliveryTruck : IDeliveryVehicle
     {
-        private Observable _observable;
-        
-        public DeliveryTruck() 
-        {
-            _observable = new Observable(this);
-        }
         public void Deliver()
         {
             Console.WriteLine("Truck makes a delivery");
-            NotifyObservers();
-        }
-        
-        public void RegisterObserver(IObserver observer) 
-        {
-            _observable.RegisterObserver(observer);
-        }
- 
-        public void NotifyObservers() 
-        {
-            _observable.NotifyObservers();
-        }
-        
-        public override string ToString() 
-        {
-            return "Delivery truck";
         }
     }
     
@@ -186,28 +109,15 @@ namespace DeliveryApplication
     public class ParcelLockerAdapter : IDeliveryVehicle
     {
         private ParcelLocker _parcelLocker;
-        private Observable _observable;
 
         public ParcelLockerAdapter(ParcelLocker parcelLocker)
         {
             _parcelLocker = parcelLocker;
-            _observable = new Observable(this);
         }
 
         public void Deliver()
         {
             _parcelLocker.ProvidePickUp();
-            NotifyObservers();
-        }
-        
-        public void RegisterObserver(IObserver observer) 
-        {
-            _observable.RegisterObserver(observer);
-        }
-
-        public void NotifyObservers() 
-        {
-            _observable.NotifyObservers();
         }
     }
     
@@ -229,16 +139,6 @@ namespace DeliveryApplication
         {
             _vehicle.Deliver();
             NumberOfDeliveries++;
-        }
-        
-        public void RegisterObserver(IObserver observer) 
-        {
-            _vehicle.RegisterObserver(observer);
-        }
-
-        public void NotifyObservers() 
-        {
-            _vehicle.NotifyObservers();
         }
     }
     
@@ -301,63 +201,6 @@ namespace DeliveryApplication
             foreach (IDeliveryVehicle vehicle in _vehicles)
             {
                 vehicle.Deliver();
-            }
-        }
-        
-        public void RegisterObserver(IObserver observer) 
-        {
-            foreach(IDeliveryVehicle vehicle in _vehicles)
-            {
-                vehicle.RegisterObserver(observer);
-            }
-        }
-  
-        public void NotifyObservers() {}
-    }
-    
-    #endregion
-    
-    #region Observer
-    
-    public interface IObserver 
-    {
-        void Update(IVehicleObservable vehicle);
-    }
-
-    public interface IVehicleObservable
-    {
-        void RegisterObserver(IObserver observer);
-        void NotifyObservers();
-    }
-    
-    public class DeliveryTracker : IObserver 
-    {
-        public void Update(IVehicleObservable vehicle) 
-        {
-            Console.WriteLine("Delivery tracker: " + vehicle + " just made a delivery.");
-        }
-    }
-    
-    public class Observable : IVehicleObservable 
-    {
-        private List<IObserver> _observers = new List<IObserver>();
-        private IVehicleObservable _vehicle;
- 
-        public Observable(IVehicleObservable vehicle) 
-        {
-            _vehicle = vehicle;
-        }
-  
-        public void RegisterObserver(IObserver observer) 
-        {
-            _observers.Add(observer);
-        }
-  
-        public void NotifyObservers() 
-        {
-            foreach(IObserver observer in _observers)
-            {
-                observer.Update(_vehicle);
             }
         }
     }
