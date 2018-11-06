@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using DeliveryApplication;
@@ -23,8 +22,10 @@ namespace DeliveryApplicationTests
         
         #endregion
 
+        #region Fleet tests
+        
         [TestMethod]
-        public void TestFleetOfVehicles()
+        public void TestFleet()
         {
             IDeliveryVehicle deliveryBike = factory.CreateDeliveryBike();
             IDeliveryVehicle deliveryCar = factory.CreateDeliveryCar();
@@ -41,9 +42,7 @@ namespace DeliveryApplicationTests
             fleetOfVehicles.Add(locker);
             
             StringWriter writer = beginReading(); // begin console capture
-
             MakeDelivery(fleetOfVehicles);
-            
             List<String> consoleEntries = endReading(writer); // end console capture
             
             var expectedList = new List<string>(new []
@@ -60,7 +59,7 @@ namespace DeliveryApplicationTests
         }
         
         [TestMethod]
-        public void TestFleetOfTrucksWithRandomNumber()
+        public void TestFleet_RandomNumberOfTrucks()
         {
             // Add random amount of trucks to a fleet
             Random random = new Random();
@@ -70,9 +69,8 @@ namespace DeliveryApplicationTests
             {
                 fleetOfTrucks.Add(factory.CreateDeliveryTruck());
             }
-            
             StringWriter writer = beginReading(); // begin console capture
-            MakeDelivery(fleetOfTrucks); // Make delivery with the fleet
+            MakeDelivery(fleetOfTrucks);
             List<String> consoleEntries = endReading(writer); // end console capture
             
             // Create String to compare Console statements with
@@ -83,7 +81,59 @@ namespace DeliveryApplicationTests
             CollectionAssert.AreEqual(consoleEntries, expectedList, "Deliveries don't match expected deliveries");
         }
         
+        [TestMethod]
+        public void TestFleet_RandomVehicles()
+        {
+            // Adds 30 random vehicles to a fleet and makes a delivery
+            Random random = new Random();
+            Fleet fleetOfRandomVehicles = new Fleet();
+            var expectedList = new String[30];
+            for (int i = 0; i < 30; i++)
+            {
+                int caseSwitch = random.Next(1,6);
+                switch (caseSwitch)
+                {
+                    case 1:
+                        fleetOfRandomVehicles.Add(factory.CreateDeliveryBike());
+                        expectedList[i] = "Bike makes a delivery";
+                        break;
+                    case 2:
+                        fleetOfRandomVehicles.Add(factory.CreateDeliveryCar());
+                        expectedList[i] = "Car makes a delivery";
+                        break;
+                    case 3:
+                        fleetOfRandomVehicles.Add(factory.CreateDeliveryVan());
+                        expectedList[i] = "Van makes a delivery";
+                        break;
+                    case 4:
+                        fleetOfRandomVehicles.Add(factory.CreateDeliveryTruck());
+                        expectedList[i] = "Truck makes a delivery";
+                        break;
+                    case 5:
+                        fleetOfRandomVehicles.Add(factory.CreateParcelLocker());
+                        expectedList[i] = "Package is picked up from a parcel locker";
+                        break;
+                }
+            }
+            StringWriter writer = beginReading(); // begin console capture
+            MakeDelivery(fleetOfRandomVehicles);
+            List<String> consoleEntries = endReading(writer); // end console capture
+            
+            CollectionAssert.AreEqual(consoleEntries, expectedList, "Deliveries don't match expected deliveries");
+        }
         
+        [TestMethod]
+        public void TestFleet_Empty()
+        {
+            Fleet fleet = new Fleet();
+            StringWriter writer = beginReading(); // begin console capture
+            MakeDelivery(fleet);
+            List<String> consoleEntries = endReading(writer); // end console capture
+            
+            CollectionAssert.AreEqual(consoleEntries, new List<string>(), "No deliveries should be made");
+        }
+        
+        #endregion
         
         #region Test Template
 
