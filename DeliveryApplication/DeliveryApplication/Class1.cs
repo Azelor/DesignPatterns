@@ -128,7 +128,7 @@ namespace DeliveryApplication
     public class DeliveryCounter : IDeliveryVehicle
     {
         private IDeliveryVehicle _vehicle;
-        public static int NumberOfDeliveries { get; private set; }
+        public static int NumberOfDeliveries { get; set; }
 
         public DeliveryCounter(IDeliveryVehicle vehicle)
         {

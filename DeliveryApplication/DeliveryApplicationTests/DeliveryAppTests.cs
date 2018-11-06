@@ -13,11 +13,16 @@ namespace DeliveryApplicationTests
         #region Test setup
         
         AbstractDeliveryVehicleFactory factory = new CountingDeliveryVehicleFactory();
-        static DeliveryAppTests deliveryApp = new DeliveryAppTests();
 
         private void MakeDelivery(IDeliveryVehicle vehicle)
         {
             vehicle.Deliver();
+        }
+        
+        [TestCleanup]
+        public void TestCleanup()
+        {
+            DeliveryCounter.NumberOfDeliveries = 0; // Resets delivery count after each test
         }
         
         #endregion
@@ -131,6 +136,46 @@ namespace DeliveryApplicationTests
             List<String> consoleEntries = endReading(writer); // end console capture
             
             CollectionAssert.AreEqual(consoleEntries, new List<string>(), "No deliveries should be made");
+        }
+        
+        #endregion
+        
+        #region DeliveryCounter tests
+        
+        [TestMethod]
+        public void TestDeliveryCounter()
+        {
+            StringWriter writer = beginReading(); // begin console capture
+            MakeDelivery(new DeliveryCounter(new DeliveryBike()));
+            MakeDelivery(new DeliveryCounter(new DeliveryCar()));
+            MakeDelivery(new DeliveryCounter(new DeliveryVan()));
+            MakeDelivery(new DeliveryCounter(new DeliveryTruck()));
+            MakeDelivery(new DeliveryCounter(new ParcelLockerAdapter(new ParcelLocker())));
+            List<String> consoleEntries = endReading(writer); // end console capture
+            
+            Assert.AreEqual(consoleEntries.Count, DeliveryCounter.NumberOfDeliveries, "Delivery count does not match expected deliveries");
+        }
+        
+        [TestMethod]
+        public void TestDeliveryCounter_RandomNumberOfCars()
+        {
+            Random random = new Random();
+            int randomNumber = random.Next(10, 100);
+            
+            StringWriter writer = beginReading(); // begin console capture
+            for (int i = 0; i < randomNumber; i++)
+            {
+                MakeDelivery(new DeliveryCounter(new DeliveryCar()));
+            }
+            List<String> consoleEntries = endReading(writer); // end console capture
+            
+            Assert.AreEqual(consoleEntries.Count, DeliveryCounter.NumberOfDeliveries, "Delivery count does not match expected deliveries");
+        }
+        
+        [TestMethod]
+        public void TestDeliveryCounter_NoDeliveries()
+        {
+            Assert.AreEqual(DeliveryCounter.NumberOfDeliveries, 0, "Delivery count does not match expected deliveries");
         }
         
         #endregion
