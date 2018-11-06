@@ -5764,11 +5764,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/kaarel/RiderProjects/DeliveryApplication/DeliveryApplicationTests/DeliveryApplicationTests.csproj",
+      "projectUniqueName": "/Users/kaarel/RiderProjects/DesignPatterns/DeliveryApplication/DeliveryApplicationTests/DeliveryApplicationTests.csproj",
       "projectName": "DeliveryApplicationTests",
-      "projectPath": "/Users/kaarel/RiderProjects/DeliveryApplication/DeliveryApplicationTests/DeliveryApplicationTests.csproj",
+      "projectPath": "/Users/kaarel/RiderProjects/DesignPatterns/DeliveryApplication/DeliveryApplicationTests/DeliveryApplicationTests.csproj",
       "packagesPath": "/Users/kaarel/.nuget/packages/",
-      "outputPath": "/Users/kaarel/RiderProjects/DeliveryApplication/DeliveryApplicationTests/obj/",
+      "outputPath": "/Users/kaarel/RiderProjects/DesignPatterns/DeliveryApplication/DeliveryApplicationTests/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -5785,8 +5785,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "/Users/kaarel/RiderProjects/DeliveryApplication/DeliveryApplication/DeliveryApplication.csproj": {
-              "projectPath": "/Users/kaarel/RiderProjects/DeliveryApplication/DeliveryApplication/DeliveryApplication.csproj"
+            "/Users/kaarel/RiderProjects/DesignPatterns/DeliveryApplication/DeliveryApplication/DeliveryApplication.csproj": {
+              "projectPath": "/Users/kaarel/RiderProjects/DesignPatterns/DeliveryApplication/DeliveryApplication/DeliveryApplication.csproj"
             }
           }
         }

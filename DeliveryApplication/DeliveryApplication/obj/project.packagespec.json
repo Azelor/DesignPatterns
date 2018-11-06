@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "/Users/kaarel/RiderProjects/DeliveryApplication/DeliveryApplication/DeliveryApplication.csproj",
+    "projectUniqueName": "/Users/kaarel/RiderProjects/DesignPatterns/DeliveryApplication/DeliveryApplication/DeliveryApplication.csproj",
     "projectName": "DeliveryApplication",
-    "projectPath": "/Users/kaarel/RiderProjects/DeliveryApplication/DeliveryApplication/DeliveryApplication.csproj",
-    "outputPath": "/Users/kaarel/RiderProjects/DeliveryApplication/DeliveryApplication/obj/",
+    "projectPath": "/Users/kaarel/RiderProjects/DesignPatterns/DeliveryApplication/DeliveryApplication/DeliveryApplication.csproj",
+    "outputPath": "/Users/kaarel/RiderProjects/DesignPatterns/DeliveryApplication/DeliveryApplication/obj/",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
       "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
