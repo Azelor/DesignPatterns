@@ -30,7 +30,7 @@ namespace DeliveryApplicationTests
         #region Fleet tests
         
         [TestMethod]
-        public void TestFleet()
+        public void FleetTest()
         {
             IDeliveryVehicle deliveryBike = new DeliveryBike();
             IDeliveryVehicle deliveryCar = new DeliveryCar();
@@ -61,7 +61,7 @@ namespace DeliveryApplicationTests
         }
         
         [TestMethod]
-        public void TestFleet_RandomNumberOfTrucks()
+        public void FleetTest_RandomNumberOfTrucks()
         {
             // Add random amount of trucks to a fleet
             Random random = new Random();
@@ -84,7 +84,7 @@ namespace DeliveryApplicationTests
         }
         
         [TestMethod]
-        public void TestFleet_RandomVehicles()
+        public void FleetTest_RandomVehicles()
         {
             // Adds 30 random vehicles to a fleet and makes a delivery
             Random random = new Random();
@@ -121,7 +121,7 @@ namespace DeliveryApplicationTests
         }
         
         [TestMethod]
-        public void TestFleet_Empty()
+        public void FleetTest_Empty()
         {
             Fleet fleet = new Fleet();
             StringWriter writer = beginReading(); // begin console capture
@@ -132,11 +132,76 @@ namespace DeliveryApplicationTests
         }
         
         #endregion
+
+        #region Factory tests
+
+        [TestMethod]
+        public void FactoryTest()
+        {
+            IDeliveryVehicle deliveryBike = factory.CreateDeliveryBike();
+            IDeliveryVehicle deliveryCar = factory.CreateDeliveryCar();
+            IDeliveryVehicle deliveryVan = factory.CreateDeliveryVan();
+            IDeliveryVehicle deliveryTruck = factory.CreateDeliveryTruck();
+            
+            StringWriter writer = beginReading(); // begin console capture
+            MakeDelivery(deliveryBike);
+            MakeDelivery(deliveryCar);
+            MakeDelivery(deliveryVan);
+            MakeDelivery(deliveryTruck);
+            List<String> consoleEntries = endReading(writer); // end console capture
+            
+            var expectedList = new List<string>(new []
+            {
+                "Bike makes a delivery", 
+                "Car makes a delivery", 
+                "Van makes a delivery", 
+                "Truck makes a delivery"
+            });
+            
+            Assert.AreEqual(consoleEntries.Count, 4, "Delivery count does not match expected deliveries");
+            CollectionAssert.AreEqual(consoleEntries, expectedList, "Deliveries don't match expected deliveries");
+        }
+        
+        [TestMethod]
+        public void FactoryTest_RandomVehicles()
+        {
+            Random random = new Random();
+            var expectedList = new String[30];
+            StringWriter writer = beginReading(); // begin console capture
+            for (int i = 0; i < 30; i++)
+            {
+                int caseSwitch = random.Next(1,5);
+                switch (caseSwitch)
+                {
+                    case 1:
+                        MakeDelivery(factory.CreateDeliveryBike());
+                        expectedList[i] = "Bike makes a delivery";
+                        break;
+                    case 2:
+                        MakeDelivery(factory.CreateDeliveryCar());
+                        expectedList[i] = "Car makes a delivery";
+                        break;
+                    case 3:
+                        MakeDelivery(factory.CreateDeliveryVan());
+                        expectedList[i] = "Van makes a delivery";
+                        break;
+                    case 4:
+                        MakeDelivery(factory.CreateDeliveryTruck());
+                        expectedList[i] = "Truck makes a delivery";
+                        break;
+                }
+            }
+            List<String> consoleEntries = endReading(writer); // end console capture
+            
+            CollectionAssert.AreEqual(consoleEntries, expectedList, "Deliveries don't match expected deliveries");
+        }
+
+        #endregion
         
         #region DeliveryCounter tests
         
         [TestMethod]
-        public void TestDeliveryCounter()
+        public void DeliveryCounterTest()
         {
             StringWriter writer = beginReading(); // begin console capture
             MakeDelivery(new DeliveryCounter(new DeliveryBike()));
@@ -149,7 +214,7 @@ namespace DeliveryApplicationTests
         }
         
         [TestMethod]
-        public void TestDeliveryCounter_RandomNumberOfCars()
+        public void DeliveryCounterTest_RandomNumberOfCars()
         {
             Random random = new Random();
             int randomNumber = random.Next(10, 100);
@@ -165,7 +230,7 @@ namespace DeliveryApplicationTests
         }
         
         [TestMethod]
-        public void TestDeliveryCounter_NoDeliveries()
+        public void DeliveryCounterTest_NoDeliveries()
         {
             Assert.AreEqual(DeliveryCounter.NumberOfDeliveries, 0, "Delivery count does not match expected deliveries");
         }
