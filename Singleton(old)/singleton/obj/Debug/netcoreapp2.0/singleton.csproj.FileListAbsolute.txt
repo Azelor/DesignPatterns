@@ -1,8 +1,0 @@
-/Users/kaarelsoot/Desktop/Kool/Lõputöö/singleton/Singleton/singleton/bin/Debug/netcoreapp2.0/singleton.dll
-/Users/kaarelsoot/Desktop/Kool/Lõputöö/singleton/Singleton/singleton/bin/Debug/netcoreapp2.0/singleton.pdb
-/Users/kaarelsoot/Desktop/Kool/Lõputöö/singleton/Singleton/singleton/obj/Debug/netcoreapp2.0/singleton.csprojResolveAssemblyReference.cache
-/Users/kaarelsoot/Desktop/Kool/Lõputöö/singleton/Singleton/singleton/obj/Debug/netcoreapp2.0/singleton.csproj.CoreCompileInputs.cache
-/Users/kaarelsoot/Desktop/Kool/Lõputöö/singleton/Singleton/singleton/obj/Debug/netcoreapp2.0/singleton.AssemblyInfoInputs.cache
-/Users/kaarelsoot/Desktop/Kool/Lõputöö/singleton/Singleton/singleton/obj/Debug/netcoreapp2.0/singleton.AssemblyInfo.cs
-/Users/kaarelsoot/Desktop/Kool/Lõputöö/singleton/Singleton/singleton/obj/Debug/netcoreapp2.0/singleton.dll
-/Users/kaarelsoot/Desktop/Kool/Lõputöö/singleton/Singleton/singleton/obj/Debug/netcoreapp2.0/singleton.pdb
