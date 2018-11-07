@@ -32,11 +32,10 @@ namespace DeliveryApplicationTests
         [TestMethod]
         public void TestFleet()
         {
-            IDeliveryVehicle deliveryBike = factory.CreateDeliveryBike();
-            IDeliveryVehicle deliveryCar = factory.CreateDeliveryCar();
-            IDeliveryVehicle deliveryVan = factory.CreateDeliveryVan();
-            IDeliveryVehicle deliveryTruck = factory.CreateDeliveryTruck();
-            IDeliveryVehicle locker = factory.CreateParcelLocker();
+            IDeliveryVehicle deliveryBike = new DeliveryBike();
+            IDeliveryVehicle deliveryCar = new DeliveryCar();
+            IDeliveryVehicle deliveryVan = new DeliveryVan();
+            IDeliveryVehicle deliveryTruck = new DeliveryTruck();
             
             Fleet fleetOfVehicles = new Fleet();
             
@@ -44,7 +43,6 @@ namespace DeliveryApplicationTests
             fleetOfVehicles.Add(deliveryCar);
             fleetOfVehicles.Add(deliveryVan);
             fleetOfVehicles.Add(deliveryTruck);
-            fleetOfVehicles.Add(locker);
             
             StringWriter writer = beginReading(); // begin console capture
             MakeDelivery(fleetOfVehicles);
@@ -55,11 +53,10 @@ namespace DeliveryApplicationTests
                 "Bike makes a delivery", 
                 "Car makes a delivery", 
                 "Van makes a delivery", 
-                "Truck makes a delivery", 
-                "Package is picked up from a parcel locker"
+                "Truck makes a delivery"
             });
             
-            Assert.AreEqual(consoleEntries.Count, 5, "Delivery count does not match expected deliveries");
+            Assert.AreEqual(consoleEntries.Count, 4, "Delivery count does not match expected deliveries");
             CollectionAssert.AreEqual(consoleEntries, expectedList, "Deliveries don't match expected deliveries");
         }
         
@@ -72,7 +69,7 @@ namespace DeliveryApplicationTests
             Fleet fleetOfTrucks = new Fleet();
             for (int i = 0; i < randomNumber; i++) 
             {
-                fleetOfTrucks.Add(factory.CreateDeliveryTruck());
+                fleetOfTrucks.Add(new DeliveryTruck());
             }
             StringWriter writer = beginReading(); // begin console capture
             MakeDelivery(fleetOfTrucks);
@@ -95,28 +92,24 @@ namespace DeliveryApplicationTests
             var expectedList = new String[30];
             for (int i = 0; i < 30; i++)
             {
-                int caseSwitch = random.Next(1,6);
+                int caseSwitch = random.Next(1,5);
                 switch (caseSwitch)
                 {
                     case 1:
-                        fleetOfRandomVehicles.Add(factory.CreateDeliveryBike());
+                        fleetOfRandomVehicles.Add(new DeliveryBike());
                         expectedList[i] = "Bike makes a delivery";
                         break;
                     case 2:
-                        fleetOfRandomVehicles.Add(factory.CreateDeliveryCar());
+                        fleetOfRandomVehicles.Add(new DeliveryCar());
                         expectedList[i] = "Car makes a delivery";
                         break;
                     case 3:
-                        fleetOfRandomVehicles.Add(factory.CreateDeliveryVan());
+                        fleetOfRandomVehicles.Add(new DeliveryVan());
                         expectedList[i] = "Van makes a delivery";
                         break;
                     case 4:
-                        fleetOfRandomVehicles.Add(factory.CreateDeliveryTruck());
+                        fleetOfRandomVehicles.Add(new DeliveryTruck());
                         expectedList[i] = "Truck makes a delivery";
-                        break;
-                    case 5:
-                        fleetOfRandomVehicles.Add(factory.CreateParcelLocker());
-                        expectedList[i] = "Package is picked up from a parcel locker";
                         break;
                 }
             }
@@ -150,7 +143,6 @@ namespace DeliveryApplicationTests
             MakeDelivery(new DeliveryCounter(new DeliveryCar()));
             MakeDelivery(new DeliveryCounter(new DeliveryVan()));
             MakeDelivery(new DeliveryCounter(new DeliveryTruck()));
-            MakeDelivery(new DeliveryCounter(new ParcelLockerAdapter(new ParcelLocker())));
             List<String> consoleEntries = endReading(writer); // end console capture
             
             Assert.AreEqual(consoleEntries.Count, DeliveryCounter.NumberOfDeliveries, "Delivery count does not match expected deliveries");
