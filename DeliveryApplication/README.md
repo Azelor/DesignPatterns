@@ -20,3 +20,6 @@ Rakenduse täiendamiseks on püstitatud neli nõuet.
 - Ühiktestide kirjutamiseks on kasutatud MSTest raamistikku.
 - Iga nõude (disainimustri) kohta on eraldi teistest sõltumatud testid ja eksisteerivad ka testid (Combined tests), mis kontrollivad kõikide nõuete koostoimimist.
 - Testitakse konsooli kirjutatu vastavust oodatud tulemusele. Konsooli teksti püüdmiseks on loodud kaks abimeetodit - BeginReading, mis alustab lugemist ja EndReading, mis väljastab konsooli kirjutatud read Listina. 
+
+### Juhend
+[Juhend mustrite realiseerimiseks (ilma testideta)](https://docs.google.com/document/d/1oKW_mMJOuoU4IqpMaTzyE6c7dbUvDWRfCypAAJQdjjw/edit?usp=sharing)
