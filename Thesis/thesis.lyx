@@ -13,6 +13,7 @@
 \usepackage{url}
 \def\UrlBreaks{\do\/\do-}
 \usepackage{breakurl}
+\titleformat{\chapter}[hang]{\bf\huge}{\thechapter}{2pc}{}
 \end_preamble
 \use_default_options false
 \maintain_unincluded_children false
@@ -334,16 +335,182 @@ LatexCommand tableofcontents
 Sissejuhatus
 \end_layout
 
+\begin_layout Section
+Taust ja probleem
+\end_layout
+
 \begin_layout Standard
-Tere
+Disainimustreid on neile omase keerukuse tõttu raske õppida
+\begin_inset CommandInset citation
+LatexCommand cite
+key "wick2005"
+literal "false"
+
+\end_inset
+
+.
+ Veel keerulisem on disainimustreid efektiivselt bakalaureuse-taseme tudengitele
+ õpetada
+\begin_inset CommandInset citation
+LatexCommand cite
+key "tao2015"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Ülesande püstitus
+\end_layout
+
+\begin_layout Standard
+Töö eesmärgiks oli tarkvara disainimustrite õpetamiseks vajalike vahendite
+ väljatöötamine ja nende valideerimine.
+\end_layout
+
+\begin_layout Section
+Metoodika
+\end_layout
+
+\begin_layout Standard
+design science
+\end_layout
+
+\begin_layout Section
+Ülevaade tööst
+\end_layout
+
+\begin_layout Standard
+norm töö
 \end_layout
 
 \begin_layout Chapter
-Nugised
+Ülevaade disainimustritest
+\end_layout
+
+\begin_layout Standard
+Disainimustrid on üldised taaskasutatavda lahendused tihti korduvatele probleemi
+dele
+\begin_inset CommandInset citation
+LatexCommand cite
+key "GoF"
+literal "false"
+
+\end_inset
+
+.
+ Idee mustrite kasutamiseks sarnaste probleemide lahendamiseks, pärineb
+ arhitekt Christopher Alexanderilt.
+ Alexanderi 1977.
+ aastal avaldatud raamat “A Pattern Language: Towns, Buildings, Construction”
+\begin_inset CommandInset citation
+LatexCommand cite
+key "alexander1977"
+literal "false"
+
+\end_inset
+
+ pani alguse mustrite arhitektuurilisele kontseptsioonile.
+ Tarkvaraarenduses mustrite kasutamise populariseeris 1994.
+ aastal avaldatud raamat “Design Patterns: Elements of Reusable Object-Oriented
+ Software 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "GoF"
+literal "false"
+
+\end_inset
+
+.
+ Autoreid tuntakse ühise nime all Gang of Four (GoF).
+ Programmeerimise teemalisi mustreid on palju eri tüüpe
+\begin_inset CommandInset citation
+LatexCommand cite
+key "khomh2018"
+literal "false"
+
+\end_inset
+
+, kuid käesoleva töö teemaks on valitud GoF disainimustrid nende laialdase
+ kasutuse tõttu.
 \end_layout
 
 \begin_layout Chapter
-Tere
+Disainimustrite õpetamine
+\end_layout
+
+\begin_layout Section
+Disainimustrite õpetamine
+\end_layout
+
+\begin_layout Section
+Clean Code
+\end_layout
+
+\begin_layout Chapter
+Testide arenduse protsess
+\end_layout
+
+\begin_layout Standard
+Siin valin ühe mustri, mille testimise protsessi ma põhjalikult kirjeldan.
+\end_layout
+
+\begin_layout Chapter
+Tulemused ja järeldused
+\end_layout
+
+\begin_layout Standard
+Sain valmis hunniku asju.
+ 20 mustrile testid.
+ 10 mustrile seletavad kirjeldused.
+\end_layout
+
+\begin_layout Standard
+Samuti analüüs tudengite tagasiside põhjal.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "khomh2018"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Kokkuvõte
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{
+\backslash
+bibname}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintCited"
+bibfiles "bibliography"
+options "plainurl"
+
+\end_inset
+
+
 \end_layout
 
 \end_body
