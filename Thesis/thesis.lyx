@@ -340,7 +340,16 @@ Taust ja probleem
 \end_layout
 
 \begin_layout Standard
-Disainimustreid on neile omase keerukuse tõttu raske õppida
+Tarkvara disainimustrid on üldised korratavad lahendused tihti esinevatele
+ probleemidele tarkvara disainis.
+ Bakalaureuseõppe tudengid, kes on äsja selgeks saanud programmeerimise
+ alusteadmised, ei ole tõenäoliselt kirjutanud nii palju tarkvara, et oleks
+ võimalust olnud samalaadsete probleemide korduvaks esinemiseks.
+ Disainimustreid on neile omase keerukuse tõttu raske õppida
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset citation
 LatexCommand cite
 key "wick2005"
@@ -351,6 +360,10 @@ literal "false"
 .
  Veel keerulisem on disainimustreid efektiivselt bakalaureuse-taseme tudengitele
  õpetada
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset citation
 LatexCommand cite
 key "tao2015"
@@ -359,6 +372,8 @@ literal "false"
 \end_inset
 
 .
+ Nimetatud asjaolud, koos eestikeelsete materjalide vähesusega, on loonud
+ vajaduse õppevahendite väljatöötamiseks.
 \end_layout
 
 \begin_layout Section
@@ -366,8 +381,27 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-Töö eesmärgiks oli tarkvara disainimustrite õpetamiseks vajalike vahendite
- väljatöötamine ja nende valideerimine.
+Eesmärgiks on töötada välja vahendid valitud tarkvara disainimustrite õpetamisek
+s.
+ Õppevahendite hulka kuuluvad disainimustrite eesti keelsed kirjeldused,
+ näidiskood koos moodultestide ja seletustega.
+ Enesekontrolliks ja tulemuste valideerimiseks luuakse küsimused ja ülesanded.
+\end_layout
+
+\begin_layout Standard
+Oodatav tulemus on valmistada tudengeid ette mõtlemaks tarkvara disainimisest
+ selliselt, et see vastaks ka keerukamate infosüsteemide vajadustele ning
+ puhta koodi põhimõtetele
+\begin_inset CommandInset citation
+LatexCommand cite
+key "CleanCode"
+literal "false"
+
+\end_inset
+
+.
+ Samuti täiendada erialast sõnavara, mis võimaldab üheselt mõista ja lühidalt
+ väljendada abstraktseid struktuure.
 \end_layout
 
 \begin_layout Section
@@ -375,7 +409,51 @@ Metoodika
 \end_layout
 
 \begin_layout Standard
-design science
+Bakalaureusetöö metoodikaks on valitud Design Science metoodika.
+ Tegemist on tulemuspõhise metoodikaga, mis seab juhised tulemuste valideerimise
+ks ja itereerimiseks teadustöödes.
+ Antud töö tulemusena valmivad
+\end_layout
+
+\begin_layout Standard
+Õppematerjalide väljatöötamisel on aluseks võetud Gang of Four
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "GoF"
+literal "false"
+
+\end_inset
+
+ disainimustrid.
+ Disainimustrite näidiskood C# programmeerimiskeeles on saadud dofactory
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "dofactory"
+literal "false"
+
+\end_inset
+
+ veebilehelt.
+ Lähtekoodi on refaktoreeritud ning sellele on kirjutatud moodultestid.
+\end_layout
+
+\begin_layout Standard
+Tulemuse valideerimine toimub teise aasta äriinfotehnoloogia õppekava bakalaureu
+seõppe tudengitel peal.
+ Esmalt antakse alamhulgale tudengitest lahendada teemakohane kontrolltöö.
+ Seejärel töötavad tudengid õppevahenditega.
+ Semestri lõpul korratakse kontrolltööd ning täidetakse kursuse eri aspekte
+ puudutav tagasiside küsitlus.
+ Teadmiste kontrolli tulemuste ja tagasiside põhjal koostab autor analüüsi,
+ mis võimaldab hinnata loodud vahendite kasulikkust disainimustrite õpetamisel.
 \end_layout
 
 \begin_layout Section
@@ -383,16 +461,35 @@ design science
 \end_layout
 
 \begin_layout Standard
-norm töö
+ANTUD TÖÖ KOOSNEB KUUEST SUUREMAST SISUPEATÜKIST, NENDEST ESIMESES PEATÜKIS
+ „KLASSIFIKAATORID“ TUTVUSTATAKSE LÜHIDALT KLASSIFIKAATORI MÕISTET.
+ JÄRGMINE PEATÜKK „MUSTRID“ RÄÄGIB MUSTRITEST ÜLDISEMALT.
+ MINU TÖÖS KASUTATAV MUSTRITE ÜHTNE STRUKTUUR ON KIRJELDATUD PEATÜKIS „MUSTRITE
+ STRUKTUUR“.
+ JÄRGNEVAD PEATÜKID TÖÖ PÕHITULEMUSTEGA, MILLEKS ESMALT ON „MUSTRITE KATALOOG“,
+ KUS ESITATAKSE LOODUD MUSTRID.
+ SAMAS ON KA IGA MUSTRI KOHTA NÄITENA ANDEBAASI DISAINI MUDEL.
+ DISAINITUD ANDMEBAASIDE PÕHJAL PÄRINGUTE TEGEMIST NING ANDMEKONTROLLI LISAMISE
+ KEERUKUST VÕRRELDAKSE PEATÜKIS „MUSTRITE OMAVAHELINE VÕRDLUS“.
+ VIIMASES SISUPEATÜKIS „MUSTRITE VÕRDLUS JA TULEMUSED“ ON TEOSTATUD MUSTRITE
+ LAIEM VÕRDLUS NING KIRJA PANDUD ANALÜÜSI PÕHJAL TEHTUD JÄRELDUSED.
 \end_layout
 
 \begin_layout Chapter
+Disainimustrid
+\end_layout
+
+\begin_layout Section
 Ülevaade disainimustritest
 \end_layout
 
 \begin_layout Standard
 Disainimustrid on üldised taaskasutatavda lahendused tihti korduvatele probleemi
 dele
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset citation
 LatexCommand cite
 key "GoF"
@@ -405,9 +502,13 @@ literal "false"
  arhitekt Christopher Alexanderilt.
  Alexanderi 1977.
  aastal avaldatud raamat “A Pattern Language: Towns, Buildings, Construction”
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset citation
 LatexCommand cite
-key "alexander1977"
+key "PatternLanguage"
 literal "false"
 
 \end_inset
@@ -415,7 +516,11 @@ literal "false"
  pani alguse mustrite arhitektuurilisele kontseptsioonile.
  Tarkvaraarenduses mustrite kasutamise populariseeris 1994.
  aastal avaldatud raamat “Design Patterns: Elements of Reusable Object-Oriented
- Software 
+ Software
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset citation
 LatexCommand cite
 key "GoF"
@@ -424,8 +529,12 @@ literal "false"
 \end_inset
 
 .
- Autoreid tuntakse ühise nime all Gang of Four (GoF).
+ Autoreid tuntakse ühise nime all Gang of Four (edaspidi GoF).
  Programmeerimise teemalisi mustreid on palju eri tüüpe
+\begin_inset space ~
+\end_inset
+
+
 \begin_inset CommandInset citation
 LatexCommand cite
 key "khomh2018"
@@ -437,28 +546,289 @@ literal "false"
  kasutuse tõttu.
 \end_layout
 
-\begin_layout Chapter
-Disainimustrite õpetamine
-\end_layout
-
 \begin_layout Section
-Disainimustrite õpetamine
-\end_layout
-
-\begin_layout Section
-Clean Code
-\end_layout
-
-\begin_layout Chapter
-Testide arenduse protsess
+Disainimustrite olulisus
 \end_layout
 
 \begin_layout Standard
-Siin valin ühe mustri, mille testimise protsessi ma põhjalikult kirjeldan.
+Disainimustrite tundmine on oluline, et osata paremini disainida tarkvara.
+ Mustrid võimaldavad efektiivsemalt korraldada klassidevahelist struktuuri.
+ Mustritega luuakse efektiivseid klassidevahelisi käitumuslikke suhteid.
+ Mustrid aitavad objektide loomise loogikat eraldada klasside äriloogikast
+ (separation of concerns).
+ Disainimustrite tundmine võimaldab efektiivsemat suhtlust arendusmeeskonna
+ vahel
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "khomh2018"
+literal "false"
+
+\end_inset
+
+.
+ Nimelt selle pärast, et see võimaldab tarkvarast rääkida kõrgemal abstraktsioon
+itasemel, kui üksikute klasside põhjal.
+ Nii võib meeskonna liige anda mõtte edasi kasutades kahte lauset, vastasel
+ juhul kümme lauset, et sama mõte edasi anda.
+\end_layout
+
+\begin_layout Section
+Disainimustrite õpetamine
+\end_layout
+
+\begin_layout Standard
+Disainimustreid on neile omase keerukuse tõttu raske õppida
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "wick2005"
+literal "false"
+
+\end_inset
+
+.
+ Veel keerulisem on disainimustreid efektiivselt bakalaureuse-taseme tudengitele
+ õpetada
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "tao2015"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Disainimustrite õpetamine toimub Tallinna Tehnikaülikoolis õpetatava aine
+ 
+\begin_inset Quotes gld
+\end_inset
+
+infosüsteemide arendus
+\begin_inset Quotes grd
+\end_inset
+
+ raames.
+ Õppeaines kasutatakse peamiselt Microsoft .NET raamistikku ja C# programmeerimis
+keelt.
+ Eelnimetatud õppeaine on üles ehitatud puhta koodi põhimõtteid silmas pidades.
+ Puhas kood ehk 
+\shape italic
+Clean Code
+\shape default
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "CleanCode"
+literal "false"
+
+\end_inset
+
+ on Robert C.
+ Martini poolt kirjutatud tarkvara arenduse parimaid tavasid käsitlev raamat.
+ Puhta koodi printsiipide hulka kuuluvad koodi standarditest kinni pidamine,
+ koodi testimine.
+\end_layout
+
+\begin_layout Chapter
+Lahenduse kirjeldus
+\end_layout
+
+\begin_layout Standard
+Tehtud töö hulka kuuluvad 23 GoF disainimustri refaktoreeritud kood ja klassiske
+emid, millest 21-le koostati moodultestid ja millest omakorda kümne mustri
+ jaoks loodi seletavad õppematerjalid.
+\end_layout
+
+\begin_layout Section
+Algallika koodi täiustamine ja klassiskeemide koostamine
+\end_layout
+
+\begin_layout Standard
+Õppematerjalide loomisel on võetud aluseks dofactory
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "dofactory"
+literal "false"
+
+\end_inset
+
+ lehel olevate GoF disainimusrite lähtekood.
+ Autor kaalus disainimustrite lähtekoodi omal käel kirjutamist, kuid see
+ ei osutunud otstarbekaks aja kasutuseks, sest erinevaid GoF disainimustrite
+ lähtekoodi komplekte on võimalik leida lugematul hulgal allikatest.
+ Aluseks võeti ülalnimetatud allikas leiduv mustrite lähtekood sellepärast,
+ et need olid kirjutatud C# programmeerimiskeeles, mis on ka 
+\begin_inset Quotes gld
+\end_inset
+
+infosüsteemide arenduse
+\begin_inset Quotes grd
+\end_inset
+
+ õppeaine põhikeeleks.
+ Lisaks sellele on sealsed reaal-elulised näited sobivad, sest annavad tudengite
+le aimu, kuidas suhestuvad abstraktsed disainimustrid päris maailmaga.
+\end_layout
+
+\begin_layout Standard
+Aluseks võetud lähtekood on küll algallikana hea, kuid ei vasta puhta koodi
+ printsiipidele, mis on eelnimetatud kursuse keskseks teemaks.
+ Selle pärast leidis autor, et on tarvis algset koodi refaktoreerida.
+ Järgnevalt on seda protsessi kirjeldatud.
+\end_layout
+
+\begin_layout Enumerate
+Allikas olevate mustrite klassid olid kõik ühes failis.
+ Klassid sai liigutatud kõik eraldi failidesse.
+\end_layout
+
+\begin_layout Enumerate
+Allikas leidus rohkelt kommentaare.
+ Puhta koodi printsiipide järgi tuleks kommentaare kasutada minimaalselt,
+ nimelt erandjuhtudel, kui ei ole võimalik meetodite ja muutujate nimedest
+ välja lugeda, mis funktsiooni vaatluse all olev koodiplokk täidab.
+ Autor eemaldas valdava enamuse kommentaaridest ja nimetas vajadusel meetodeid
+ ja muutujaid ümber, et koodi mõistmist suurendada.
+\end_layout
+
+\begin_layout Enumerate
+Allikas olevate mustrite põhifunktsionaalsust demonstreeriti eraldi klassiga
+ MainApp, mille Main meetodi kaudu toimus kokkupuude disainimustri põhiklasside
+ objektidega.
+ Selle jaoks, et näidata, kuidas mingi muster toimib, kasutati suurel hulgal
+ Console.WriteLine käsklusi, mis kirjutavad teksti konsooli.
+ Autor eemaldas MainApp klassi ja konsooli kirjutamise käsud.
+ Nende asemel koostas autor moodultestid, millest on lähemalt räägitud järgmises
+ alapeatükis.
+\end_layout
+
+\begin_layout Standard
+Täiustatud koodi põhjal lõi autor iga mustri kohta klassiskeemid, kasutades
+ Visual Studio Class Diagram [VÕIBOLLA VIIDE VS CD TÖÖRIISTALE? ]tööriista.
+ See tööriist genereerib lähtekoodi põhjal klassidevahelisi seoseid illustreeriv
+a UML klassiskeemi [TODO MINGI VIIDE UML-ile].
+ Kood genereeritakse vastavalt reaalsele lähtekoodile, ehk kood on skeemiga
+ otseses sõltuvuses ja kui muuta ühte, siis muutub ka teine.
+ Viimaks kohandas autor Class Diagram tööriista funktsionaalsuseid kasutades
+ genereeritud skeemi, et see oleks visuaalselt paremini hoomatav.
+\end_layout
+
+\begin_layout Standard
+Järgnevalt on välja toodud ühe disainimustri kood enne ja pärast refaktoreerimis
+t ning ka genereeritud klassiskeem.
+\end_layout
+
+\begin_layout Standard
+TODO KOOD BEFORE
+\end_layout
+
+\begin_layout Standard
+KOOD AFTER
+\end_layout
+
+\begin_layout Standard
+KLASSISKEEM
+\end_layout
+
+\begin_layout Section
+Moodultestide koostamine (21)
+\end_layout
+
+\begin_layout Standard
+Moodultestid loodi 21-le mustrile 23-st.
+ Teste ei loodud mustritele Abstract Factory ja Prototype, sest nende testimine
+ osutus mustrite olemuse tõttu keeruliseks.
+ Mõlemad mustrid kuuluvad loomismustrite hulka.
+ Kuna test peab katma ühte tervikut (ehk tervet mustrit), siis antud mustrite
+ puhul ei õnnestunud kirjutada moodulteste, mis hoomaksid mustrit kui tervikut.
+\end_layout
+
+\begin_layout Standard
+Järgnevalt on kirjeldatud ühe mustri jaoks testide loomise käiku.
+ Mis muster? Ei tea veel.
+\end_layout
+
+\begin_layout Section
+Juhendi koostamine (10)
+\end_layout
+
+\begin_layout Standard
+Autor valis kümme mustrit, mille kohta koostas juhendi.
+ Puhtalt aja puuduse tõttu tegi autor valiku ja valis subjektiivselt lihtsalt
+ kümme välja ja oligi nii.
+\end_layout
+
+\begin_layout Standard
+Neljandaks, sai loodud detailne seletav dokumentatsioon 10 mustri kohta.
+ Dokumentatsioonis seletatakse üksikasjaliselt lahti, mille jaoks mustrit
+ kasutatakse ja mida mingi osa koodist teeb.
+ Dokumentatsioonis on ka näidatud ühe või mitme mustriga seotud testi töö
+ käiku.
+ Dokumentatsioon sisaldab ka eelnimetatud klassiskeemi, mustri definitsiooni
+ GoF järgi.
+\end_layout
+
+\begin_layout Standard
+Järgnevalt on toodud välja üks juhenditest ning hiljem arutelu selle koostamise
+ kohta.
+ Mis osutus keeruliseks?
+\end_layout
+
+\begin_layout Chapter
+Analüüs
+\end_layout
+
+\begin_layout Section
+Esimene faas
+\end_layout
+
+\begin_layout Standard
+baseline
+\end_layout
+
+\begin_layout Section
+Teine faas
+\end_layout
+
+\begin_layout Section
+Kolmas faas
+\end_layout
+
+\begin_layout Section
+Probleemsed teemad
+\end_layout
+
+\begin_layout Section
+Edasised tööd
 \end_layout
 
 \begin_layout Chapter
 Tulemused ja järeldused
+\end_layout
+
+\begin_layout Section
+Disainimustrite kirjelduste koostamine
 \end_layout
 
 \begin_layout Standard
@@ -469,18 +839,26 @@ Sain valmis hunniku asju.
 
 \begin_layout Standard
 Samuti analüüs tudengite tagasiside põhjal.
-\begin_inset CommandInset citation
-LatexCommand cite
-key "khomh2018"
-literal "false"
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Chapter
 Kokkuvõte
+\end_layout
+
+\begin_layout Chapter
+Lisad
+\end_layout
+
+\begin_layout Section
+Juhendid
+\end_layout
+
+\begin_layout Section
+Kood
+\end_layout
+
+\begin_layout Section
+Küsimused
 \end_layout
 
 \begin_layout Standard
