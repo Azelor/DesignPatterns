@@ -409,7 +409,7 @@ Metoodika
 \end_layout
 
 \begin_layout Standard
-Bakalaureusetöö metoodikaks on valitud Design Science metoodika.
+Bakalaureusetöö metoodikaks on valitud disainiteaduse (design science) metoodika.
  Tegemist on tulemuspõhise metoodikaga, mis seab juhised tulemuste valideerimise
 ks ja itereerimiseks teadustöödes.
  Antud töö tulemusena valmivad
@@ -657,7 +657,7 @@ emid, millest 21-le koostati moodultestid ja millest omakorda kümne mustri
 \end_layout
 
 \begin_layout Section
-Algallika koodi täiustamine ja klassiskeemide koostamine (refacor) (23)
+Algallika koodi täiustamine ja klassiskeemide koostamine
 \end_layout
 
 \begin_layout Standard
@@ -736,58 +736,19 @@ a UML klassiskeemi [TODO MINGI VIIDE UML-ile].
 
 \begin_layout Standard
 Järgnevalt on välja toodud ühe disainimustri kood enne ja pärast refaktoreerimis
-t ning generee
+t ning ka genereeritud klassiskeem.
 \end_layout
 
 \begin_layout Standard
-Teiseks, igal mustril oli kaasas main meetod, kus mustri tööd demonstreeriti.
- Tihtipeale liikus main meetodi sisu Testi Projekti.
- Nii on hea clean code järgi - testide kood on äriloogika koodist lahus.
- Olemasolevale funktsionaalsusele sai lisatud hulk teste juurde, mis kontrollisi
-d kas klassides olevate meetodite korrektset funktsioneerimist või mustrite
- tööd tervikuna.
+TODO KOOD BEFORE
 \end_layout
 
 \begin_layout Standard
-Kolmandaks, igale mustrile sai loodud klassiskeemid, kasutades Visual Studio
- class diagram tööriista.
- See tööriist genereerib skeemi vastavalt reaalsele lähtekoodile, ehk on
- koodiga otseses sõltuvuses - kui muuta üht, muutub ka teine.
- Klassidiagrammid on hea vahend andmaks visuaalset ülevaadet, kuidas muster
- töötab.
+KOOD AFTER
 \end_layout
 
 \begin_layout Standard
-Neljandaks, sai loodud detailne seletav dokumentatsioon 10 mustri kohta.
- Dokumentatsioonis seletatakse üksikasjaliselt lahti, mille jaoks mustrit
- kasutatakse ja mida mingi osa koodist teeb.
- Dokumentatsioonis on ka näidatud ühe või mitme mustriga seotud testi töö
- käiku.
- Dokumentatsioon sisaldab ka eelnimetatud klassiskeemi, mustri definitsiooni
- GoF järgi.
-\end_layout
-
-\begin_layout Standard
-Tegin 23-le disainimustrile kood refaktoreerimist.
- et saada ta clean code printsiipidega kooskõlla.
- algselt olid kõik mustri klassid ühes failis, need aeti laiali.
- Siis olid veel koledad kommentaarid seal lehel, need sai eemaldatud.
- Siis toimus põhifunktsionaalsuse käivitamine MainApp klassis, Main meetodis.
- Kogu see värk liikus testide projekti.
- Tihtipeale Main meetodis toimuv, liigutati mitmesse eraldi testi.
- sest iga test peab kontrollima vaid ühte funktsionaalsust.
-\backslash
-
-\end_layout
-
-\begin_layout Standard
-Siis tehti kasutades Visual Studio Class Diagram tööriista abil klassiskeemid
- kõikide mustrite kohta.
-\end_layout
-
-\begin_layout Standard
-Siin näitan ka kuidas nägi muster alguses välja ning kuidas nägi ta välja
- lõpus.
+KLASSISKEEM
 \end_layout
 
 \begin_layout Section
@@ -816,6 +777,16 @@ Juhendi koostamine (10)
 Autor valis kümme mustrit, mille kohta koostas juhendi.
  Puhtalt aja puuduse tõttu tegi autor valiku ja valis subjektiivselt lihtsalt
  kümme välja ja oligi nii.
+\end_layout
+
+\begin_layout Standard
+Neljandaks, sai loodud detailne seletav dokumentatsioon 10 mustri kohta.
+ Dokumentatsioonis seletatakse üksikasjaliselt lahti, mille jaoks mustrit
+ kasutatakse ja mida mingi osa koodist teeb.
+ Dokumentatsioonis on ka näidatud ühe või mitme mustriga seotud testi töö
+ käiku.
+ Dokumentatsioon sisaldab ka eelnimetatud klassiskeemi, mustri definitsiooni
+ GoF järgi.
 \end_layout
 
 \begin_layout Standard
