@@ -1,0 +1,646 @@
+// question: 0  name: Switch category to top/Disainimustrid/Üldised küsimused
+$CATEGORY: top/Disainimustrid/Üldised küsimused
+
+
+// question: 27037  name: kategooriad1
+::kategooriad1::[html]<p>Milline järgnevatest <b>ei ole</b> üks disainimustrite kategooriatest (GoF järgi) ?</p>{
+	~<p>Loomismustrid (Creational patterns)</p>
+	~<p>Struktuurimustrid (Structural patterns)</p>
+	~<p>Käitumuslikud mustrid (Behavioral patterns)</p>
+	=<p>Andmevahetusmustrid (Data Transfer patterns)</p>
+}
+
+
+// question: 27038  name: Mustrid 1
+::Mustrid 1::[html]<p><b id\="docs-internal-guid-83318654-7fff-800c-3487-537d29f806bd"></b></p><p><span id\="docs-internal-guid-83318654-7fff-800c-3487-537d29f806bd"><span><span><span>Mis on tarkvara disainimuster?</span></span></span></span></p><p></p>{
+	~<p><span id\="docs-internal-guid-ec3cace3-7fff-cb5d-9516-28f5af6e3f2e"><span>Valmis disain teatud probleemile, mida on võimalik otse programmi lähtekoodi kopeerida.</span></span><br></p>
+	=<p>Üldine ja taaskasutatav lahendus sageli esinevale probleemile antud kontekstis.<br></p>
+	~<p>Programmeerimiskeele spetsiifiline lahendus konkreetse probleemi lahendamiseks.<br></p>
+}
+
+
+// question: 27039  name: Mustrid 17
+::Mustrid 17::[html]<p>Millised väited kehtivad disainimustrite kohta?</p>{
+	~%25%Disainimustrite tundmine täiendab sõnavara, mis võimaldab üheselt mõista ja lühidalt väljendada abstraktseid struktuure
+	~%25%<p>Disainimustrid on keelest, tootest ja platformist sõltumatud<br></p>
+	~%25%<p>Disainimustrite kasutamine võimalikult paljudes kohtades võib lisada rakendusele liigset keerukust<br></p>
+	~%25%<p>Mustrid on justkui (kõrgema abstraktsiooni taseme) ehituskivid, mida saab süsteemi disainides kasutada<br></p>
+}
+
+
+// question: 0  name: Switch category to top/Disainimustrid/Loomismustrid
+$CATEGORY: top/Disainimustrid/Loomismustrid
+
+
+// question: 27040  name: Mustrid 2
+::Mustrid 2::[html]<p>Milline väide iseloomustab loomismustreid? (Creational patterns)<br></p>{
+	=<p>Need disainimustrid annavad viisi objektide loomiseks ilma new operaatorit kasutamata, peites sellega objektide loomise loogika.<br></p>
+	~<p><span id\="docs-internal-guid-8d1259f3-7fff-ac42-c823-b55f05f7f132">Need disainimustrid vastutavad efektiivsete klassihierarhiate ja klassidevaheliste suhete loomise eest.</span><br></p>
+	~<p>Need disainimustrid vastutavad tegevuste efektiivse jaotuse eest programmi eri osade vahel.<br></p>
+	~<p><span id\="docs-internal-guid-c665159b-7fff-c348-d34d-17dcf719a1e1">Kõik väited sobivad.</span><br></p>
+}
+
+
+// question: 27041  name: Mustrid 5
+::Mustrid 5::[html]<p>Mille poolest erinevad Factory Method ja Abstract Factory mustrid?<br></p>{
+	~<p>Factory Methodi puhul on tegemist loomismustriga. Abstract Factory kuulub käitumuslike mustrite hulka.<br></p>
+	~<p>Factory Method ja Abstract Factory on erinevad nimetused samale mustrile.</p><p><br></p>
+	=<p>Factory Method on loob ühe toote (klassi instantsi). Abstract Factoryt kasutatakse sarnaste tootegruppide või omavahel seotud toodete loomiseks.&nbsp;<br></p>
+	~<p>Factory Method delegeerib objekti instantsieerimise teisele objektile. Abstract Factory sõltub objekti instantsieerimisel alamklassist.<br></p>
+}
+
+
+// question: 0  name: Switch category to top/Disainimustrid/Struktuurimustrid
+$CATEGORY: top/Disainimustrid/Struktuurimustrid
+
+
+// question: 27042  name: Mustrid 3
+::Mustrid 3::[html]<p>Milline väide iseloomustab loomismustreid? (Structural patterns)<br></p>{
+	~<p>Need disainimustrid annavad viisi objektide loomiseks ilma new operaatorit kasutamata, peites sellega objektide loomise loogika.<br></p>
+	=<p>Need disainimustrid vastutavad efektiivsete klassihierarhiate ja klassidevaheliste suhete loomise eest.<br></p>
+	~<p>Need disainimustrid vastutavad tegevuste efektiivse jaotuse eest programmi eri osade vahel.<br></p>
+	~<p><span id\="docs-internal-guid-c665159b-7fff-c348-d34d-17dcf719a1e1">Kõik väited sobivad.</span><br></p>
+}
+
+
+// question: 0  name: Switch category to top/Disainimustrid/Käitumuslikud mustrid
+$CATEGORY: top/Disainimustrid/Käitumuslikud mustrid
+
+
+// question: 27043  name: Mustrid 4
+::Mustrid 4::[html]<p>Milline väide iseloomustab käitumuslikke mustreid? (Behavioral patterns)<br></p>{
+	~<p>Need disainimustrid annavad viisi objektide loomiseks ilma new operaatorit kasutamata, peites sellega objektide loomise loogika.<br></p>
+	~<p>Need disainimustrid vastutavad efektiivsete klassihierarhiate ja klassidevaheliste suhete loomise eest.<br></p>
+	=<p>Need disainimustrid vastutavad tegevuste efektiivse jaotuse eest programmi eri osade vahel.<br></p>
+	~<p><span id\="docs-internal-guid-c665159b-7fff-c348-d34d-17dcf719a1e1">Kõik väited sobivad.</span><br></p>
+}
+
+
+// question: 0  name: Switch category to top/Disainimustrid/Käitumuslikud mustrid/Chain of Responsibility
+$CATEGORY: top/Disainimustrid/Käitumuslikud mustrid/Chain of Responsibility
+
+
+// question: 27044  name: chain1
+::chain1::[html]<p>Milline järgnevatest kavatsustest kirjeldab Chain of Responsibility disainimustrit?</p>{
+	=Hoiab ära päringu saatja sidumist selle saajaga, andes rohkem kui ühele objektile võimaluse päringut käidelda. Aheldab saaja rollis olevad objektid ja annab päringu mööda ahelat edasi, kuniks leidub objekt, kes päringu lahendab.<br>
+	~<p>Võimaldab agregaat-objekti elementide poole järjestikku pöördumise, ilma selle aluseks olevat esitust avalikustamata.<br></p>
+	~<p>Kasutades kapseldamist, salvestab ja väljastab objekti sisemise oleku, nii et objekti oleks hiljem võimalik sellesse olekusse tagasi tuua.<br></p>
+	~<p>Defineerib üks-mitmele sõltuvuse objektide vahel, nii et kui ühe objekti olek muutub, teavitatakse ja uuendatakse kõiki selle objekti jälgijaid.<br></p>
+}
+
+
+// question: 27045  name: chain2
+::chain2::[html]<p><b>Millisele disainimustrile vastab järgnev kirjeldus?</b><br></p><p>Hoiab ära päringu saatja sidumist selle saajaga, andes rohkem kui ühele objektile võimaluse päringut käidelda. Aheldab saaja rollis olevad objektid ja annab päringu mööda ahelat edasi, kuniks leidub objekt, kes päringu lahendab.<br></p>{
+	=<p>Chain of Responsibility</p>
+	~<p>Iterator</p>
+	~<p>Proxy</p>
+	~<p>Mediator</p>
+}
+
+
+// question: 0  name: Switch category to top/Disainimustrid/Käitumuslikud mustrid/Command
+$CATEGORY: top/Disainimustrid/Käitumuslikud mustrid/Command
+
+
+// question: 27046  name: command1
+::command1::[html]<p>Milline kirjeldus vastab Command disainimustrile?</p>{
+	=<p>Kapseldab päringu objektina, võimaldades kliente erinevate päringute parameetritega varustada, päringuid järjestada või logida ja teha tühistatavaid operatsioone.<br></p>
+	~<p>Kasutades kapseldamist, salvestab ja väljastab objekti sisemise oleku, nii et objekti oleks hiljem võimalik sellesse olekusse tagasi tuua.</p>
+	~<p>Defineerib operatsioonis algoritmi skeleti, andes mõned teostatavad sammud edasi kliendi alamklassile. Võimaldab alamklassidel defineerida kindlaid algoritmi samme, ilma algoritmi struktuuri muutmata.<br></p>
+	~<p>Võimaldab agregaat-objekti elementide poole järjestikku pöördumise, ilma selle aluseks olevat esitust avalikustamata.<br></p>
+}
+
+
+// question: 27047  name: command2
+::command2::[html]<p><b>Millisele disainimustrile vastab järgnev kirjeldus?</b></p><p>See muster kapseldab päringu objektina, võimaldades kliente erinevate päringute parameetritega varustada, päringuid järjestada või logida ning teha tühistatavaid operatsioone.<br></p>{
+	=<p>Command</p>
+	~<p>Factory Method</p>
+	~<p>Strategy</p>
+	~<p>Visitor</p>
+}
+
+
+// question: 0  name: Switch category to top/Disainimustrid/Käitumuslikud mustrid/Interpreter
+$CATEGORY: top/Disainimustrid/Käitumuslikud mustrid/Interpreter
+
+
+// question: 27048  name: interpreter1
+::interpreter1::[html]<p>Milline kirjeldus vastab <b>Interpreter</b> disainimustrile?</p>{
+	=<p>Defineerib antud keele puhul esituse keele grammatikale ning tõlgendaja, mis kasutab esitust selle keele lausete tõlgendamiseks.<br></p>
+	~<p>Kasutades kapseldamist, salvestab ja väljastab objekti sisemise oleku, nii et objekti oleks hiljem võimalik sellesse olekusse tagasi tuua.<br></p>
+	~<p>Võimaldab objektil muuta enda käitumist vastavat sisemise oleku muutustele. Objekt näib nagu oleks muutnud oma klassi.<br></p>
+	~<p>Defineerib operatsioonis algoritmi skeleti, andes mõned teostatavad sammud edasi kliendi alamklassile. Võimaldab alamklassidel defineerida kindlaid algoritmi samme, ilma algoritmi struktuuri muutmata.<br></p>
+}
+
+
+// question: 27049  name: interpreter2
+::interpreter2::[html]<p><b>Milline disainimuster vastab järgnevale kirjeldusele?</b></p><p>Defineerib antud keele puhul esituse keele grammatikale ning tõlgendaja, mis kasutab esitust selle keele lausete tõlgendamiseks.<br></p>{
+	=<p>Interpreter</p>
+	~Flyweight
+	~<p>Singleton</p>
+	~<p>Decorator</p>
+}
+
+
+// question: 0  name: Switch category to top/Disainimustrid/Käitumuslikud mustrid/Iterator
+$CATEGORY: top/Disainimustrid/Käitumuslikud mustrid/Iterator
+
+
+// question: 27050  name: iterator1
+::iterator1::[html]Milline kirjeldus vastab <b>Iterator</b>&nbsp;mustrile?{
+	=<p>Võimaldab agregaat-objekti elementide poole järjestikku pöördumise, ilma selle aluseks olevat esitust avalikustamata.</p><p><br></p>
+	~<p>Defineerib objekti, mis kapseldab objektidevahelise suhtluse. Soosib lõtva sidestust (ingl.k. loose coupling) vältides objektide omavahelist otsest viitamist ja võimaldab üksteisest sõltumatult muuta nende suhtlust.<br></p>
+	~<p>Kasutades kapseldamist, salvestab ja väljastab objekti sisemise oleku, nii et objekti oleks hiljem võimalik sellesse olekusse tagasi tuua.<br></p>
+	~<p>Võimaldab objektil muuta enda käitumist vastavat sisemise oleku muutustele.&nbsp;<br></p>
+}
+
+
+// question: 27051  name: iterator2
+::iterator2::[html]<p><b>Millisele disainimustrile vastab järgnev kirjeldus?</b></p><p>Võimaldab agregaat-objekti elementide poole järjestikku pöördumise, ilma selle aluseks olevat esitust avalikustamata.<br></p>{
+	=<p>Iterator</p>
+	~<p>Composite</p>
+	~<p>Bridge</p>
+	~<p>Prototype</p>
+}
+
+
+// question: 0  name: Switch category to top/Disainimustrid/Käitumuslikud mustrid/Mediator
+$CATEGORY: top/Disainimustrid/Käitumuslikud mustrid/Mediator
+
+
+// question: 27052  name: mediator1
+::mediator1::[html]<p>Milline kirjeldus vastab <b>Mediator</b>&nbsp;disainimustrile?</p>{
+	=<p>Defineerib objekti, mis kapseldab objektidevahelise suhtluse. Põhineb lõdval sidestusel, väldib objektide omavahelist otsest viitamist ja võimaldab üksteisest sõltumatult muuta nende suhtlust.<br></p>
+	~<p>Kasutades kapseldamist, salvestab ja väljastab objekti sisemise oleku, nii et objekti oleks hiljem võimalik sellesse olekusse tagasi tuua.<br></p>
+	~<p>Hoiab ära päringu saatja sidumist selle saajaga, andes rohkem kui ühele objektile võimaluse päringut käidelda. Aheldab saaja rollis olevad objektid ja annab päringu mööda ahelat edasi, kuniks leidub objekt, kes päringu lahendab.<br></p>
+	~<p>Defineerib antud keele puhul esituse keele grammatikale ning tõlgendaja, mis kasutab esitust selle keele lausete tõlgendamiseks.<br></p>
+}
+
+
+// question: 27053  name: mediator2
+::mediator2::[html]<p><b>Milline disainimuster vastab järgnevale kirjeldusele?</b></p><p>Defineerib objekti, mis kapseldab objektidevahelise suhtluse. Põhineb lõdval sidestusel, väldib objektide omavahelist otsest viitamist ja võimaldab üksteisest sõltumatult muuta nende suhtlust.<br></p>{
+	=<p>Mediator</p>
+	~<p>Builder</p>
+	~<p>Interpreter</p>
+	~Adapter
+}
+
+
+// question: 0  name: Switch category to top/Disainimustrid/Käitumuslikud mustrid/Memento
+$CATEGORY: top/Disainimustrid/Käitumuslikud mustrid/Memento
+
+
+// question: 27054  name: memento1
+::memento1::[html]<p>Milline kirjeldus vastab <b>Memento </b>disainimustrile?</p>{
+	=<p>Kasutades kapseldamist, salvestab ja väljastab objekti sisemise oleku, nii et objekti oleks hiljem võimalik sellesse olekusse tagasi tuua.<br></p>
+	~<p>Võimaldab objektil muuta enda käitumist vastavat sisemise oleku muutustele. Objekt näib nagu oleks muutnud oma klassi.<br></p>
+	~<p>Defineerib algoritmide perekonna, kapseldab algoritmid ja teeb need omavahel vahetatavaks.&nbsp;<br></p>
+	~<p>Defineerib operatsioonis algoritmi skeleti, andes mõned teostatavad sammud edasi kliendi alamklassile. Võimaldab alamklassidel defineerida kindlaid algoritmi samme, ilma algoritmi struktuuri muutmata.<br></p>
+}
+
+
+// question: 27055  name: memento2
+::memento2::[html]<p><b>Milline disainimuster vastab järgnevale kirjeldusele?</b></p><p>Kasutades kapseldamist, salvestab ja väljastab objekti sisemise oleku, nii et objekti oleks hiljem võimalik sellesse olekusse tagasi tuua.<br></p>{
+	=<p>Memento</p>
+	~<p>Facade</p>
+	~<p>Bridge</p>
+	~<p>Proxy</p>
+}
+
+
+// question: 0  name: Switch category to top/Disainimustrid/Käitumuslikud mustrid/Observer
+$CATEGORY: top/Disainimustrid/Käitumuslikud mustrid/Observer
+
+
+// question: 27056  name: Mustrid 12
+::Mustrid 12::[html]<p><span id\="docs-internal-guid-83019ebe-7fff-38ce-cc66-9eda79214ea6">Milline disainimuster defineerib üks-mitmele seose objektide vahel nii, et kui ühe objekti olek muutub, teavitatakse sellest sõltuvaid objekte automaatselt?</span><br></p>{
+	=<p>Observer<br></p>
+	~<p>Chain of responsibility<br></p>
+	~<p>Command</p>
+	~<p>Adapter</p>
+}
+
+
+// question: 27057  name: Mustrid 13
+::Mustrid 13::[html]<p><span id\="docs-internal-guid-d2f4a6b7-7fff-24e8-1d26-fc96e61bb0a2">Millisel disainimustril põhineb C\# keeles leiduv <b>Events</b>? </span></p><p><span style\="font-size\: 1em;"><span><i>Events enable a class or object to notify other classes or objects when something of interest occurs. The class that sends (or raises) the event is called the publisher and the classes that receive (or handle) the event are called subscribers.</i></span></span></p>{
+	~<p>Facade</p>
+	~<p>Factory Method</p>
+	=<p>Observer</p>
+	~<p>State</p>
+}
+
+
+// question: 27058  name: Mustrid 14
+::Mustrid 14::[html]<p>Millisele disainimustri analoogiaks võib tuua meililistiga liitumise või kellegi jälgimise sotsiaalmeedias?<br></p>{
+	~<p>Iterator</p>
+	=<p>Observer</p>
+	~<p>Interpreter</p>
+	~<p>Visitor</p>
+}
+
+
+// question: 27059  name: observer1
+::observer1::[html]<p>Milline kirjeldus vastab <b>Observer</b>&nbsp;disainimustrile?</p>{
+	=<p>Defineerib üks-mitmele sõltuvuse objektide vahel, nii et kui ühe objekti olek muutub, teavitatakse ja uuendatakse kõiki selle objekti jälgijaid.<br></p>
+	~<p>Võimaldab objektil muuta enda käitumist vastavat sisemise oleku muutustele. Objekt näib nagu oleks muutnud oma klassi.<br></p>
+	~<p>Võimaldab agregaat-objekti elementide poole järjestikku pöördumise, ilma selle aluseks olevat esitust avalikustamata.<br></p>
+	~<p>Defineerib antud keele puhul esituse keele grammatikale ning tõlgendaja, mis kasutab esitust selle keele lausete tõlgendamiseks.<br></p>
+}
+
+
+// question: 0  name: Switch category to top/Disainimustrid/Käitumuslikud mustrid/State
+$CATEGORY: top/Disainimustrid/Käitumuslikud mustrid/State
+
+
+// question: 27060  name: state1
+::state1::[html]<p>Milline järgnevatest kirjeldustest vastab <b>State </b>disainimustrile?</p>{
+	=<p>Võimaldab objektil muuta enda käitumist vastavat sisemise oleku muutustele. Objekt näib nagu oleks muutnud oma klassi.<br></p>
+	~<p>Defineerib operatsioonis algoritmi skeleti, andes mõned teostatavad sammud edasi kliendi alamklassile. Võimaldab alamklassidel defineerida kindlaid algoritmi samme, ilma algoritmi struktuuri muutmata.<br></p>
+	~<p>Kasutades kapseldamist, salvestab ja väljastab objekti sisemise oleku, nii et objekti oleks hiljem võimalik sellesse olekusse tagasi tuua.<br></p>
+	~<p>Võimaldab agregaat-objekti elementide poole järjestikku pöördumise, ilma selle aluseks olevat esitust avalikustamata.<br></p>
+}
+
+
+// question: 27061  name: state2
+::state2::[html]<p><b>Millist disainimustrit iseloomustab järgnev kirjeldus?</b></p><p>Võimaldab objektil muuta enda käitumist vastavat sisemise oleku muutustele. Objekt näib nagu oleks muutnud oma klassi.<br></p>{
+	=<p>State</p>
+	~<p>Singleton</p>
+	~<p>Prototype</p>
+	~<p>Flyweight</p>
+}
+
+
+// question: 0  name: Switch category to top/Disainimustrid/Käitumuslikud mustrid/Strategy
+$CATEGORY: top/Disainimustrid/Käitumuslikud mustrid/Strategy
+
+
+// question: 27062  name: strategy1
+::strategy1::[html]<p>Milline kirjeldus vastab <b>Strategy </b>mustrile?</p>{
+	=<p>Defineerib algoritmide perekonna, kapseldab algoritmid ja teeb need omavahel vahetatavaks.&nbsp;<br></p>
+	~<p>Hoiab ära päringu saatja sidumist selle saajaga, andes rohkem kui ühele objektile võimaluse päringut käidelda. Aheldab saaja rollis olevad objektid ja annab päringu mööda ahelat edasi, kuniks leidub objekt, kes päringu lahendab.<br></p>
+	~<p>Kapseldab päringu objektina, võimaldades kliente erinevate päringute parameetritega varustada, päringuid järjestada või logida ja teha tühistatavaid operatsioone.<br></p>
+	~<p>Defineerib antud keele puhul esituse keele grammatikale ning tõlgendaja, mis kasutab esitust selle keele lausete tõlgendamiseks.<br></p>
+}
+
+
+// question: 27063  name: strategy2
+::strategy2::[html]<p><b>Millisele disainimustrile vastab järgnev kirjeldus?</b></p><p>Defineerib algoritmide perekonna, kapseldab algoritmid ja teeb need omavahel vahetatavaks.&nbsp;<br></p>{
+	=<p>Strategy</p>
+	~<p>Facade</p>
+	~<p>Composite</p>
+	~<p>Chain of Responsibility</p>
+}
+
+
+// question: 0  name: Switch category to top/Disainimustrid/Käitumuslikud mustrid/Template Method
+$CATEGORY: top/Disainimustrid/Käitumuslikud mustrid/Template Method
+
+
+// question: 27064  name: template1
+::template1::[html]<p>Milline kirjeldus vastab <b>Template Method </b>disainimustrile?</p>{
+	=<p>Defineerib operatsioonis algoritmi skeleti, andes mõned teostatavad sammud edasi kliendi alamklassile. Võimaldab alamklassidel defineerida kindlaid algoritmi samme, ilma algoritmi struktuuri muutmata.<br></p>
+	~<p>Esitab operatsiooni, mida teostatakse objekti strutkuuri elementidel. Võimaldab defineerida uut operatsiooni, ilma muutmata elementide klasse, millel opereeritakse.&nbsp;<br></p>
+	~<p>Defineerib üks-mitmele sõltuvuse objektide vahel, nii et kui ühe objekti olek muutub, teavitatakse ja uuendatakse kõiki selle objekti jälgijaid.</p><p><br></p>
+	~<p>Võimaldab agregaat-objekti elementide poole järjestikku pöördumise, ilma selle aluseks olevat esitust avalikustamata.<br></p>
+}
+
+
+// question: 27065  name: template2
+::template2::[html]<p><b>Millist disainimustrit iseloomustab järgnev kirjeldus?</b></p><p>Defineerib operatsioonis algoritmi skeleti, andes mõned teostatavad sammud edasi kliendi alamklassile. Võimaldab alamklassidel defineerida kindlaid algoritmi samme, ilma algoritmi struktuuri muutmata.<br></p>{
+	=<p>Template Method</p>
+	~<p>Abstract Factory</p>
+	~<p>Builder</p>
+	~<p>Facade</p>
+}
+
+
+// question: 0  name: Switch category to top/Disainimustrid/Käitumuslikud mustrid/Visitor
+$CATEGORY: top/Disainimustrid/Käitumuslikud mustrid/Visitor
+
+
+// question: 27066  name: visitor1
+::visitor1::[html]<p>Milline järgnevatest kirjeldustest vastab <b>Visitor </b>disainimustrile?</p>{
+	=<p>Esitab operatsiooni, mida teostatakse objekti strutkuuri elementidel. Võimaldab defineerida uut operatsiooni, ilma muutmata elementide klasse, millel opereeritakse.<br></p>
+	~<p>Kasutades kapseldamist, salvestab ja väljastab objekti sisemise oleku, nii et objekti oleks hiljem võimalik sellesse olekusse tagasi tuua.<br></p>
+	~<p>Võimaldab agregaat-objekti elementide poole järjestikku pöördumise, ilma selle aluseks olevat esitust avalikustamata.<br></p>
+	~<p>On tarvis väljastada objektidele päringuid, ilma et oleks midagi teada päritavate operatsioonide või päringu saaja kohta.&nbsp;<br></p>
+}
+
+
+// question: 27067  name: visitor2
+::visitor2::[html]<p><b>Milline muster vastab järgnevale kirjeldusele?</b></p><p>Esitab operatsiooni, mida teostatakse objekti strutkuuri elementidel. Võimaldab defineerida uut operatsiooni, ilma muutmata elementide klasse, millel opereeritakse.&nbsp;<br></p>{
+	=<p>Visitor</p>
+	~<p>Proxy</p>
+	~<p>Adapter</p>
+	~Mediator
+}
+
+
+// question: 0  name: Switch category to top/Disainimustrid/Loomismustrid/Abstract Factory
+$CATEGORY: top/Disainimustrid/Loomismustrid/Abstract Factory
+
+
+// question: 27068  name: abstract1
+::abstract1::[html]<p>Milline kirjeldus vastab <b>Abstract Factory </b>disainimustrile?</p>{
+	=<p>Pakub liidest sarnaste või sõltuvate objektide perekondade loomiseks, ilma nende konkreetseid klasse täpsustamata.&nbsp;</p><p><br></p>
+	~<p>Eraldab keeruka objekti loomise selle esitusest, nii et sama ehitusprotsessi abil on võimalik luua erinevaid esitusi.<br></p>
+	~<p>Defineerib liidese objektide loomiseks, kuid laseb alamklassidel otsustada, millist klassi instantsieerida. Võimaldab klassil instantsieerimise edasi anda alamklassidele.</p><p><br></p>
+	~<p>Tagab, et klassil oleks ainult üks isend ning pakub sellele globaalset ligipääsu.<br></p>
+}
+
+
+// question: 27069  name: abstract2
+::abstract2::[html]<p><b>Millist disainimustrit iseloomustab järgnev kirjeldus?</b></p><p>Pakub liidest sarnaste või sõltuvate objektide perekondade loomiseks, ilma nende konkreetseid klasse täpsustamata.&nbsp;</p>{
+	=<p>Abstract Factory</p>
+	~<p>Prototype</p>
+	~<p>Builder</p>
+	~<p>Composite</p>
+}
+
+
+// question: 0  name: Switch category to top/Disainimustrid/Loomismustrid/Builder
+$CATEGORY: top/Disainimustrid/Loomismustrid/Builder
+
+
+// question: 27070  name: builder1
+::builder1::[html]<p>Milline kirjeldus vastab <b>Builder </b>disainimustrile?</p>{
+	=<p>Eraldab keeruka objekti loomise selle esitusest, nii et sama ehitusprotsessi abil on võimalik luua erinevaid esitusi.</p><p><br></p>
+	~<p>Defineerib liidese objektide loomiseks, kuid laseb alamklassidel otsustada, millist klassi instantsieerida. Võimaldab klassil instantsieerimise edasi anda alamklassidele.</p><p><br></p>
+	~<p>Muundab klassi liidese kliendi poolt oodatavaks liideseks. Võimaldab klassidel koos töötada, mis muidu omavahel ei ühildu.</p><p><br></p>
+	~<p>Esitab objektid puu struktuurina ja näitab nende kuuluvussuhteid. Võimaldab kliendil üheselt kohelda individuaalseid objekte ja objektide kompositsioone.</p><p><br></p>
+}
+
+
+// question: 27071  name: builder2
+::builder2::[html]<p><b>Milline muster vastab järgnevale kirjeldusele?</b></p><p>Eraldab keeruka objekti loomise selle esitusest, nii et sama ehitusprotsessi abil on võimalik luua erinevaid esitusi.</p><p><br></p>{
+	=<p>Builder</p>
+	~<p>Template Method</p>
+	~Factory Method
+	~<p>Prototype</p>
+}
+
+
+// question: 0  name: Switch category to top/Disainimustrid/Loomismustrid/Factory Method
+$CATEGORY: top/Disainimustrid/Loomismustrid/Factory Method
+
+
+// question: 27072  name: factorymethod1
+::factorymethod1::[html]<p><b>Milline disainimuster vastab järgnevale kirjeldusele?</b></p><p>Defineerib liidese objektide loomiseks, kuid laseb alamklassidel otsustada, millist klassi instantsieerida. Võimaldab klassil instantsieerimise edasi anda alamklassidele.</p><p><br></p>{
+	=<p>Factory Method</p>
+	~<p>Singleton</p>
+	~<p>Memento</p>
+	~<p>Chain of Responsibility</p>
+}
+
+
+// question: 27073  name: Mustrid 10
+::Mustrid 10::[html]<p>Mida teeb Factory Method?<br></p>{
+	=<p>See muster loob liidese objekti loomiseks, jättes alamklassidele valiku, millise klassi instants luua.<br></p>
+	~<p>See muster muundab klassi liidest selliselt, et see sobituks kliendi poolt defineeritud liidesega.<br></p>
+	~<p>See muster võimaldab kasutajal lisada uut funktsionaalsust olemasolevale objektile.<br></p>
+	~<p>See muster peidab kasutaja eest süsteemi sisemised osad ning annab kasutajale liidese süsteemile ligi pääsemiseks.<br></p>
+}
+
+
+// question: 27074  name: Mustrid 11
+::Mustrid 11::[html]<p>Milline väide on korrektne Factory Methodi puhul?<br></p>{
+	~<p>Factory Method loob objekti ilma loomise loogika avaldamiseta kliendile.<br></p>
+	~<p>Factory Method võimaldab luua objekti kutsudes Factory meetodit, selle asemelt, et kutsuda konstruktorit.<br></p>
+	~<p>Factory Method kuulub loomismustrite hulka.<br></p>
+	=<span id\="docs-internal-guid-daf4e1be-7fff-1699-763c-2c7be23e172f">Kõik väited on tõesed.</span>
+}
+
+
+// question: 27075  name: Mustrid 9
+::Mustrid 9::[html]<p>Milline väide kehtib Factory Methodi kohta?<br></p>{
+	=<p>Factory Method peidab objekti loomise loogika, mille tulemusena on kood vähem sidestunud (coupled)<br></p>
+	~<p>Factory Method võimaldab rakenduses luua vaid ühe objekti klassi kohta.<br></p>
+	~<p>Factory Method võimaldab objektil muuta oma käitumist vastavalt sisemisele olekule.<br></p>
+}
+
+
+// question: 0  name: Switch category to top/Disainimustrid/Loomismustrid/Prototype
+$CATEGORY: top/Disainimustrid/Loomismustrid/Prototype
+
+
+// question: 27076  name: prototype1
+::prototype1::[html]Milline kirjeldus vastab <b>Prototype </b>mustrile?{
+	=<p>Täpsustab mis tüüpi objekte luuakse, kasutades prototüübilist isendit ning loob uued objektid kopeerides seda prototüüpi.</p><p><br></p>
+	~<p>Defineerib liidese objektide loomiseks, kuid laseb alamklassidel otsustada, millist klassi instantsieerida. Võimaldab klassil instantsieerimise edasi anda alamklassidele.<br></p>
+	~<p>Eraldab keeruka objekti loomise selle esitusest, nii et sama ehitusprotsessi abil on võimalik luua erinevaid esitusi.<br></p>
+	~<p>Pakub liidest sarnaste või sõltuvate objektide perekondade loomiseks, ilma nende konkreetseid klasse täpsustamata.&nbsp;</p><p><br></p>
+}
+
+
+// question: 27077  name: prototype2
+::prototype2::[html]<p><b>Millist mustrit iseloomustab järgnev kirjeldus?</b></p><p><p></p></p><p>Täpsustab mis tüüpi objekte luuakse, kasutades prototüübilist isendit ning loob uued objektid kopeerides seda prototüüpi.</p>{
+	=<p>Prototype</p>
+	~<p>Memento</p>
+	~<p>Facade</p>
+	~<p>State</p>
+}
+
+
+// question: 0  name: Switch category to top/Disainimustrid/Loomismustrid/Singleton
+$CATEGORY: top/Disainimustrid/Loomismustrid/Singleton
+
+
+// question: 27078  name: Mustrid 6
+::Mustrid 6::[html]<p>Millised väited kehtivad Singleton disainimustri kohta?<br></p>{
+	~%50%<p>Singleton võimaldab luua maksimaalselt ühe Singleton klassi objekti<br></p>
+	~%50%<p>Singleton objekt on globaalselt ligipääsetav<br></p>
+	~<p>Singleton kuulub struktuurimustrite hulka<br></p>
+	~<p>Singleton&nbsp;võimaldab objektil muuta oma käitumist vastavalt sisemisele olekule</p>
+}
+
+
+// question: 27079  name: Mustrid 7
+::Mustrid 7::[html]<p>Millist disainimustrit oleks sobilik kasutada draiveri või konfiguratsioonifaili objekti loomiseks, kus tohib eksisteerida vaid üks instants sellest klassist?<br></p>{
+	~<p>Factory Method<br></p>
+	~<p>Abstract Factory</p>
+	=<p>Singleton</p>
+	~<p>Command</p>
+}
+
+
+// question: 27080  name: Mustrid 8
+::Mustrid 8::[html]<p>Millised puudused esinevad Singleton mustri puhul?<br></p>{
+	~<p>Singleton muster teeb ühiktestimise keeruliseks.<br></p>
+	~<p>Mitut lõime kasutavas rakenduses tuleb Singletoni implementeerides tähelepanu pöörata, et ei loodaks mitut klassi instantsi.<br></p>
+	~<p>Singleton on vastuolus objekt-orienteeritud disainis tuntud ühe vastutuse printsiibile (Single Responsibility Principle), mille kohaselt klass peaks vastutama programmi ühe kindla osa funktsionaalsuse eest.<br></p>
+	=<p>Kõik laused iseloomustavad Singletoni puuduseid.<br></p>
+}
+
+
+// question: 27081  name: singleton1
+::singleton1::[html]<p>Milline kirjeldus vastab <b>Singleton </b>disainimustrile?</p>{
+	=<p>Tagab, et klassil oleks ainult üks isend ning pakub sellele globaalset ligipääsu.<br></p>
+	~<p>Muundab klassi liidese kliendi poolt oodatavaks liideseks. Võimaldab klassidel koos töötada, mis muidu omavahel ei ühildu.<br></p>
+	~<p>Defineerib liidese objektide loomiseks, kuid laseb alamklassidel otsustada, millist klassi instantsieerida. Võimaldab klassil instantsieerimise edasi anda alamklassidele.</p><p><br></p>
+	~<p>Määrab objektile dünaamiliselt lisa kohustusi. Pakub alamklasside loomise asemel funktsionaalsuse laiendamiseks paindlikku alternatiivi.</p><p><br></p>
+}
+
+
+// question: 27082  name: singleton2
+::singleton2::[html]<p><b>Millisele disainimustrile vastab järgnev kirjeldus?</b></p><p>Tagab, et klassil oleks ainult üks isend ning pakub sellele globaalset ligipääsu.<br></p>{
+	=<p>Singleton</p>
+	~<p>Iterator</p>
+	~<p>Strategy</p>
+	~<p>Command</p>
+}
+
+
+// question: 0  name: Switch category to top/Disainimustrid/Struktuurimustrid/Adapter
+$CATEGORY: top/Disainimustrid/Struktuurimustrid/Adapter
+
+
+// question: 27083  name: adapter1
+::adapter1::[html]<p>Milline kirjeldus vastab <b>Adapter </b>disainimustrile?</p>{
+	=<p>Muundab klassi liidese kliendi poolt oodatavaks liideseks. Võimaldab klassidel koos töötada, mis muidu omavahel ei ühildu.<br></p>
+	~<p>Esitab objektid puu struktuurina ja näitab nende kuuluvussuhteid. Võimaldab kliendil üheselt kohelda individuaalseid objekte ja objektide kompositsioone.<br></p>
+	~<p>Määrab objektile dünaamiliselt lisa kohustusi. Pakub alamklasside loomise asemel funktsionaalsuse laiendamiseks paindlikku alternatiivi.</p><p><br></p>
+	~<p>Pakub alamsüsteemi liideste hulgale ühtset liidest. Defineerib kõrgema taseme liidese, mis teeb alamsüsteemi kasutamise lihtsamaks.<br></p>
+}
+
+
+// question: 27084  name: adapter2
+::adapter2::[html]<p><b>Millisele disainimustrile vastab järgnev kirjeldus?</b></p><p>Muundab klassi liidese kliendi poolt oodatavaks liideseks. Võimaldab klassidel koos töötada, mis muidu omavahel ei ühildu.</p>{
+	=<p>Adapter</p>
+	~<p>Facade</p>
+	~<p>Proxy</p>
+	~<p>Decorator</p>
+}
+
+
+// question: 0  name: Switch category to top/Disainimustrid/Struktuurimustrid/Bridge
+$CATEGORY: top/Disainimustrid/Struktuurimustrid/Bridge
+
+
+// question: 27085  name: bridge1
+::bridge1::[html]<p>Milline kirjeldus vastab <b>Bridge </b>disainimustrile?</p>{
+	=<p><span>Lahutab abstraktsiooni selle implementatasioonist, nii et need saavad teineteisest sõltumatult muutuda.</span><br></p>
+	~<p>Esitab objektid puu struktuurina ja näitab nende kuuluvussuhteid. Võimaldab kliendil üheselt kohelda individuaalseid objekte ja objektide kompositsioone.<br></p>
+	~<p>Võimaldab suure hulga detailsete objektide efektiivset jagamist.<br></p>
+	~<p>Määrab objektile dünaamiliselt lisa kohustusi. Pakub alamklasside loomise asemel funktsionaalsuse laiendamiseks paindlikku alternatiivi.<br></p>
+}
+
+
+// question: 27086  name: bridge2
+::bridge2::[html]<p><b>Millist disainimustrit iseloomustab järgnev kirjeldus?</b></p><p>Lahutab abstraktsiooni selle implementatasioonist, nii et need saavad teineteisest sõltumatult muutuda.<br></p>{
+	=<p>Bridge</p>
+	~<p>Facade</p>
+	~<p>Flyweight</p>
+	~<p>Mediator</p>
+}
+
+
+// question: 0  name: Switch category to top/Disainimustrid/Struktuurimustrid/Composite
+$CATEGORY: top/Disainimustrid/Struktuurimustrid/Composite
+
+
+// question: 27087  name: composite1
+::composite1::[html]Milline kirjeldus vastab <b>Composite</b>&nbsp;mustrile?{
+	=<p>Esitab objektid puu struktuurina ja näitab nende kuuluvussuhteid. Võimaldab kliendil üheselt kohelda individuaalseid objekte ja objektide kompositsioone.</p><p><br></p>
+	~<p>Määrab objektile dünaamiliselt lisa kohustusi. Pakub alamklasside loomise asemel funktsionaalsuse laiendamiseks paindlikku alternatiivi.<br></p>
+	~<p>Pakub asendust või kohahoidjat teisele objektile, eesmärgiga kontrollida selle objekti juurdepääsu.<br></p>
+	~<p>Pakub alamsüsteemi liideste hulgale ühtset liidest. Defineerib kõrgema taseme liidese, mis teeb alamsüsteemi kasutamise lihtsamaks.<br></p>
+}
+
+
+// question: 27088  name: composite2
+::composite2::[html]<p><b>Millisele disainimustrile vastab järgnev kirjeldus?</b></p><p>Esitab objektid puu struktuurina ja näitab nende kuuluvussuhteid. Võimaldab kliendil üheselt kohelda individuaalseid objekte ja objektide kompositsioone.</p>{
+	=<p>Composite</p>
+	~<p>Abstract Factory</p>
+	~<p>Memento</p>
+	~<p>Command</p>
+}
+
+
+// question: 0  name: Switch category to top/Disainimustrid/Struktuurimustrid/Decorator
+$CATEGORY: top/Disainimustrid/Struktuurimustrid/Decorator
+
+
+// question: 27089  name: decorator1
+::decorator1::[html]<p>Milline kirjeldus vastab <b>Decorator </b>mustrile?</p>{
+	=<p>Määrab objektile dünaamiliselt lisa kohustusi. Pakub alamklasside loomise asemel funktsionaalsuse laiendamiseks paindlikku alternatiivi.</p><p><br></p>
+	~<p>Võimaldab suure hulga detailsete objektide efektiivset jagamist.</p><p><br></p>
+	~<p>Võimaldab agregaat-objekti elementide poole järjestikku pöördumise, ilma selle aluseks olevat esitust avalikustamata.<br></p>
+	~<p>Defineerib üks-mitmele sõltuvuse objektide vahel, nii et kui ühe objekti olek muutub, teavitatakse ja uuendatakse kõiki selle objekti jälgijaid.<br></p>
+}
+
+
+// question: 27090  name: decorator2
+::decorator2::[html]<p><b>Millist disainimustrit iseloomustab järgnev kirjeldus?</b></p><p><b></b></p><p><span>Määrab objektile dünaamiliselt lisa kohustusi. Pakub alamklasside loomise asemel funktsionaalsuse laiendamiseks paindlikku alternatiivi.</span></p><p><br></p>{
+	=<p>Decorator</p>
+	~<p>Singleton</p>
+	~<p>Iterator</p>
+	~<p>Proxy</p>
+}
+
+
+// question: 0  name: Switch category to top/Disainimustrid/Struktuurimustrid/Facade
+$CATEGORY: top/Disainimustrid/Struktuurimustrid/Facade
+
+
+// question: 27091  name: Mustrid 15
+::Mustrid 15::[html]<p><span id\="docs-internal-guid-52e34f8a-7fff-e6c3-2e66-10a4d24f49eb">Milline disainimuster pakub alamsüsteemi liidestele (interface) ühtset liidest? See defineerib kõrgema taseme liidese, mis teeb alamsüsteemi kasutamise lihtsamaks.</span><br></p>{
+	=<p>Facade</p>
+	~<p>Adapter</p>
+	~<p>Strategy</p>
+	~<p>Command</p>
+}
+
+
+// question: 27092  name: Mustrid 16
+::Mustrid 16::[html]<p>Milline väide iseloomustab <b>Facade</b> disainimustrit?<br></p>{
+	~<p><span id\="docs-internal-guid-35799fe5-7fff-b4b5-5322-280ef6b5d9b1">See võimaldab kasutajal lisada uut funktsionaalsust olemasolevale objektile.</span><br></p>
+	=<p>See muster pakub alamsüsteemi liideste hulgale ühtset liidest ja defineerib kõrgema taseme liidese, mis teeb alamsüsteemi kasutamise lihtsamaks.</p><p><br></p>
+	~<p>Seda mustrit kasutatakse juhul, kui on tarvis objektide gruppi käsitleda, kui üksikut objekti.<br></p>
+	~<p>See muster muundab klassi liidest selliselt, et see sobituks kliendi poolt defineeritud liidesega.</p>
+}
+
+
+// question: 0  name: Switch category to top/Disainimustrid/Struktuurimustrid/Flyweight
+$CATEGORY: top/Disainimustrid/Struktuurimustrid/Flyweight
+
+
+// question: 27093  name: flyweight1
+::flyweight1::[html]<p>Milline kirjeldus iseloomustab <b>Flyweight </b>disainimustrit?</p>{
+	=<p>Võimaldab suure hulga detailsete objektide efektiivset jagamist.</p><p><br></p>
+	~<p>Kasutades kapseldamist, salvestab ja väljastab objekti sisemise oleku, nii et objekti oleks hiljem võimalik sellesse olekusse tagasi tuua.</p><p><br></p>
+	~<p>Hoiab ära päringu saatja sidumist selle saajaga, andes rohkem kui ühele objektile võimaluse päringut käidelda. Aheldab saaja rollis olevad objektid ja annab päringu mööda ahelat edasi, kuniks leidub objekt, kes päringu lahendab.</p><p><br></p>
+	~<p>Muundab klassi liidese kliendi poolt oodatavaks liideseks. Võimaldab klassidel koos töötada, mis muidu omavahel ei ühildu.</p><p><br></p>
+}
+
+
+// question: 27094  name: flyweight2
+::flyweight2::[html]<p><span><b>Milline disainimuster vastab järgnevale kirjeldusele?</b></span></p><p><b><span></span></b></p><p>Võimaldab suure hulga detailsete objektide efektiivset jagamist.</p>{
+	=<p>Flyweight</p>
+	~<p>Singleton</p>
+	~<p>State</p>
+	~<p>Prototype</p>
+}
+
+
+// question: 0  name: Switch category to top/Disainimustrid/Struktuurimustrid/Proxy
+$CATEGORY: top/Disainimustrid/Struktuurimustrid/Proxy
+
+
+// question: 27095  name: proxy1
+::proxy1::[html]<p>Milline kirjeldus vastab <b>Proxy </b>disainimustrile?</p>{
+	=<p>Pakub asendust või kohahoidjat teisele objektile, eesmärgiga kontrollida selle objekti juurdepääsu.</p><p><br></p>
+	~<p>Määrab objektile dünaamiliselt lisa kohustusi. Pakub alamklasside loomise asemel funktsionaalsuse laiendamiseks paindlikku alternatiivi.</p><p><br></p>
+	~<p>Muundab klassi liidese kliendi poolt oodatavaks liideseks. Võimaldab klassidel koos töötada, mis muidu omavahel ei ühildu.<br></p>
+	~<p>Võimaldab objektil muuta enda käitumist vastavat sisemise oleku muutustele. Objekt näib nagu oleks muutnud oma klassi.<br></p>
+}
+
+
+// question: 27096  name: proxy2
+::proxy2::[html]<p><span><span id\="docs-internal-guid-df010681-7fff-b66f-6526-81f0738d513a" style\=""><b>Milline disainimuster vastab järgnevale kirjeldusele?</b></span></span></p><p><span><span style\="">Pakub asendust või kohahoidjat teisele objektile, eesmärgiga kontrollida selle objekti juurdepääsu.<br></span></span></p>{
+	=<p>Proxy</p>
+	~<p>Abstract Factory</p>
+	~<p>Template Method</p>
+	~<p>Factory Method</p>
+}
+
+
