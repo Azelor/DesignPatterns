@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="GoF.Structural.Composite.CompositeElement">
+    <Position X="1" Y="4" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAABAAAAAABQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Structural\Composite\CompositeElement.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="elements" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="GoF.Structural.Composite.DrawingElement">
+    <Position X="2.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIBAAAAAAAAAAAAAAAABQAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Structural\Composite\DrawingElement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GoF.Structural.Composite.PrimitiveElement">
+    <Position X="3.75" Y="4" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Structural\Composite\PrimitiveElement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

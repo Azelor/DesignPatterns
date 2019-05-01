@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="GoF.Structural.Facade.Bank">
+    <Position X="2.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Structural\Facade\Bank.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GoF.Structural.Facade.Credit">
+    <Position X="6.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Structural\Facade\Credit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GoF.Structural.Facade.Customer">
+    <Position X="0.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Structural\Facade\Customer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GoF.Structural.Facade.Loan">
+    <Position X="4.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Structural\Facade\Loan.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GoF.Structural.Facade.Mortgage">
+    <Position X="4.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAIAAAAAAAAAIQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Structural\Facade\Mortgage.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="bank" />
+      <Field Name="loan" />
+      <Field Name="credit" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

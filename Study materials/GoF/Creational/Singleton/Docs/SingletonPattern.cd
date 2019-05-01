@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Antud juhul on kasutatud Singleton mustrit selleks, et realiseerida ühtne lõimeturvaline logiraamat. &#xD;&#xA;&#xD;&#xA;Singletoni korral on olemas ainult üks klassi eksemplar, mida siis kõik, kellele selle klassi objekti on vaja, saavad kasutada. ">
+    <Position X="3.75" Y="1.062" Height="1.823" Width="1.7" />
+  </Comment>
+  <Class Name="GoF.Creational.Singleton.ThreadSafeLogBook">
+    <Position X="1.25" Y="1" Width="2" />
+    <Members>
+      <Method Name="isOutOfRange" Hidden="true" />
+      <Field Name="logs" Hidden="true" />
+      <Field Name="synchronizationLock" Hidden="true" />
+      <Method Name="threadSafeInstanceCreating" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAMAAAAAAAABAgAABAAGAAAAAAAAEAAAA=</HashCode>
+      <FileName>Creational\Singleton\ThreadSafeLogBook.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

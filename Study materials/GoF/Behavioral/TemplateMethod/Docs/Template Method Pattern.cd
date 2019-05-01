@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="GoF.Behavioral.TemplateMethod.Categories">
+    <Position X="4.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Behavioral\TemplateMethod\Categories.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GoF.Behavioral.TemplateMethod.DataAccessObject">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAgAAgAAAIAAAAAAAAgAAAAAQAAAAAI=</HashCode>
+      <FileName>Behavioral\TemplateMethod\DataAccessObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GoF.Behavioral.TemplateMethod.Products">
+    <Position X="6.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Behavioral\TemplateMethod\Products.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

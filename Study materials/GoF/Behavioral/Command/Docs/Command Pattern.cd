@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Antud juhul vastav testklass (client) kasutab kalkulaatorit (invoker) andes vastavaid korraldusi. Kalkulaator hoiab meeles kõik saadud korraldused, kusjuures protsessor (receiver) nende korralduste konkreetne täitja .">
+    <Position X="5.031" Y="1.26" Height="1.542" Width="1.898" />
+  </Comment>
+  <Class Name="GoF.Behavioral.Command.Calculator">
+    <Position X="3.25" Y="1.25" Width="1.5" />
+    <Members>
+      <Field Name="counter" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAIABAAAAAAAAQABACAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Behavioral\Command\Calculator.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="processor" />
+      <Property Name="Display" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="commands" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="GoF.Behavioral.Command.Processor">
+    <Position X="3.25" Y="3.25" Width="1.5" />
+    <Members>
+      <Field Name="result" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Behavioral\Command\Processor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GoF.Behavioral.Command.Command">
+    <Position X="0.5" Y="4" Width="1.5" />
+    <Members>
+      <Property Name="Operand" Hidden="true" />
+      <Method Name="undo" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAQAgAAEAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAEAIAA=</HashCode>
+      <FileName>Behavioral\Command\Command.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="processor" />
+      <Property Name="Operator" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GoF.Behavioral.Command.Display" Collapsed="true">
+    <Position X="0.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAgAAAAEAAAAAAQAAAAAAAAAAAAIAAAAIAA=</HashCode>
+      <FileName>Behavioral\Command\Display.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="GoF.Behavioral.Command.ICommand">
+    <Position X="0.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Behavioral\Command\ICommand.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="GoF.Behavioral.Command.Operator">
+    <Position X="5.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAQAAAAAAAAADAAAAAAAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>Behavioral\Command\Operator.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

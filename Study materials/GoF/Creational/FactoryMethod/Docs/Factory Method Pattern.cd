@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="GoF.Creational.FactoryMethod.BibliographyPage" Collapsed="true">
+    <Position X="5.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Creational\FactoryMethod\BibliographyPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GoF.Creational.FactoryMethod.ConclusionPage" Collapsed="true">
+    <Position X="5.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Creational\FactoryMethod\ConclusionPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GoF.Creational.FactoryMethod.Document">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAgAAAAAAAAAAAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Creational\FactoryMethod\Document.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Pages" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="GoF.Creational.FactoryMethod.EducationPage" Collapsed="true">
+    <Position X="7.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Creational\FactoryMethod\EducationPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GoF.Creational.FactoryMethod.ExperiencePage" Collapsed="true">
+    <Position X="5.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Creational\FactoryMethod\ExperiencePage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GoF.Creational.FactoryMethod.IntroductionPage" Collapsed="true">
+    <Position X="7.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Creational\FactoryMethod\IntroductionPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GoF.Creational.FactoryMethod.Page" Collapsed="true">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Creational\FactoryMethod\Page.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GoF.Creational.FactoryMethod.Report">
+    <Position X="3" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Creational\FactoryMethod\Report.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GoF.Creational.FactoryMethod.ResultsPage" Collapsed="true">
+    <Position X="5.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Creational\FactoryMethod\ResultsPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GoF.Creational.FactoryMethod.Resume">
+    <Position X="0.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Creational\FactoryMethod\Resume.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GoF.Creational.FactoryMethod.SkillsPage" Collapsed="true">
+    <Position X="7.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Creational\FactoryMethod\SkillsPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GoF.Creational.FactoryMethod.SummaryPage" Collapsed="true">
+    <Position X="7.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Creational\FactoryMethod\SummaryPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

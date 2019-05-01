@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="GoF.Behavioral.Interpreter.Expression">
+    <Position X="1.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAABAAAAEBAAAAAAAAAgAAIA=</HashCode>
+      <FileName>Behavioral\Interpreter\Expression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GoF.Behavioral.Interpreter.HundredExpression" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAABAAAAEBAAAAAAAAAgAAIA=</HashCode>
+      <FileName>Behavioral\Interpreter\HundredExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GoF.Behavioral.Interpreter.OneExpression" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAABAAAAEBAAAAAAAAAgAAIA=</HashCode>
+      <FileName>Behavioral\Interpreter\OneExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GoF.Behavioral.Interpreter.TenExpression" Collapsed="true">
+    <Position X="3" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAABAAAAEBAAAAAAAAAgAAIA=</HashCode>
+      <FileName>Behavioral\Interpreter\TenExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GoF.Behavioral.Interpreter.ThousandExpression" Collapsed="true">
+    <Position X="3" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAABAAAAEBAAAAAAAAAgAAIA=</HashCode>
+      <FileName>Behavioral\Interpreter\ThousandExpression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GoF.Behavioral.Interpreter.Context">
+    <Position X="5.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAIAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Behavioral\Interpreter\Context.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GoF.Behavioral.Interpreter.RomanNumber">
+    <Position X="5.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEACEAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Behavioral\Interpreter\RomanNumber.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="context" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="interpreters" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

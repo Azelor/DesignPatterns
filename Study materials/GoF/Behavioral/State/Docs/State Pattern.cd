@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="GoF.Behavioral.State.Account">
+    <Position X="0.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAgAAAAEAAAAAAAAQAAABAAAAAI=</HashCode>
+      <FileName>Behavioral\State\Account.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="State" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="GoF.Behavioral.State.GoldState">
+    <Position X="5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAQAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Behavioral\State\GoldState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GoF.Behavioral.State.RedState">
+    <Position X="1" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAQAAAAAAAAAEAAAACAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Behavioral\State\RedState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GoF.Behavioral.State.SilverState">
+    <Position X="3" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Behavioral\State\SilverState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GoF.Behavioral.State.State">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAARAAAAAAAgAAAAEAAAgAAAAQAAAAAAAAEI=</HashCode>
+      <FileName>Behavioral\State\State.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

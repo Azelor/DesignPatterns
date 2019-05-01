@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="GoF.Behavioral.Visitor.Clerk">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Behavioral\Visitor\Clerk.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GoF.Behavioral.Visitor.Director">
+    <Position X="2.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Behavioral\Visitor\Director.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GoF.Behavioral.Visitor.Element">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Behavioral\Visitor\Element.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GoF.Behavioral.Visitor.Employee">
+    <Position X="2.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAYAAAACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Behavioral\Visitor\Employee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GoF.Behavioral.Visitor.Employees">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAgAIAAAAIAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Behavioral\Visitor\Employees.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GoF.Behavioral.Visitor.IncomeVisitor" BaseTypeListCollapsed="true">
+    <Position X="7" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Behavioral\Visitor\IncomeVisitor.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.1" Collapsed="true" />
+  </Class>
+  <Class Name="GoF.Behavioral.Visitor.President">
+    <Position X="5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Behavioral\Visitor\President.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GoF.Behavioral.Visitor.VacationVisitor" BaseTypeListCollapsed="true">
+    <Position X="5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Behavioral\Visitor\VacationVisitor.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="1.3" Collapsed="true" />
+  </Class>
+  <Interface Name="GoF.Behavioral.Visitor.IVisitor">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Behavioral\Visitor\IVisitor.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

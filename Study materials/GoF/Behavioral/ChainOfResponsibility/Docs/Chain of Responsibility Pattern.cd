@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Comment CommentText="Sõltuvalt ostu summa suurusest, alllkirjastab ostu kas osakonnajuhataja, direktor, president või juhatus">
+    <Position X="5.625" Y="0.552" Height="0.844" Width="2.512" />
+  </Comment>
+  <Class Name="GoF.Behavioral.ChainOfResponsibility.Department">
+    <Position X="0.5" Y="3.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Behavioral\ChainOfResponsibility\Department.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="manager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="GoF.Behavioral.ChainOfResponsibility.Purchase">
+    <Position X="4" Y="3.25" Width="1.5" />
+    <Members>
+      <Method Name="Purchase" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAACAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Behavioral\ChainOfResponsibility\Purchase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GoF.Behavioral.ChainOfResponsibility.Approver" Collapsed="true">
+    <Position X="3" Y="0.75" Width="2" />
+    <AssociationLine Name="Successor" Type="GoF.Behavioral.ChainOfResponsibility.Approver" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="3.25" Y="0.75" />
+        <Point X="3.25" Y="0.406" />
+        <Point X="4.75" Y="0.406" />
+        <Point X="4.75" Y="0.75" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAABCAAAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Behavioral\ChainOfResponsibility\Approver.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Successor" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="GoF.Behavioral.ChainOfResponsibility.Director" Collapsed="true">
+    <Position X="2.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Behavioral\ChainOfResponsibility\Director.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GoF.Behavioral.ChainOfResponsibility.Manager" Collapsed="true">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Behavioral\ChainOfResponsibility\Manager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GoF.Behavioral.ChainOfResponsibility.President" Collapsed="true">
+    <Position X="4" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Behavioral\ChainOfResponsibility\President.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GoF.Behavioral.ChainOfResponsibility.Board" Collapsed="true">
+    <Position X="5.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Behavioral\ChainOfResponsibility\Board.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
