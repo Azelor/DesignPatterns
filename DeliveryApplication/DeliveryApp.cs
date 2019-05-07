@@ -3,57 +3,57 @@ using System.Collections.Generic;
 
 namespace DeliveryApplication
 {
-//    class DeliveryApp
-//    {
-//        public static void Main(string[] args)
-//        {
-//            AbstractDeliveryVehicleFactory factory = new CountingDeliveryVehicleFactory();
-//            
-//            var deliveryApp = new DeliveryApp();
-//            deliveryApp.PlanDelivery(factory);
-//        }
-//
-//        public void PlanDelivery(AbstractDeliveryVehicleFactory factory)
-//        {
-//            IDeliveryVehicle deliveryBike = factory.CreateDeliveryBike();
-//            IDeliveryVehicle deliveryCar = factory.CreateDeliveryCar();
-//            IDeliveryVehicle deliveryVan = factory.CreateDeliveryVan();
-//            IDeliveryVehicle deliveryTruck = factory.CreateDeliveryTruck();
-//            IDeliveryVehicle locker = factory.CreateParcelLocker();
-//            
-//            Fleet fleetOfVehicles = new Fleet();
-//            
-//            fleetOfVehicles.Add(deliveryBike);
-//            fleetOfVehicles.Add(deliveryCar);
-//            fleetOfVehicles.Add(deliveryVan);
-//            fleetOfVehicles.Add(deliveryTruck);
-//            fleetOfVehicles.Add(locker);
-//            
-//            Console.WriteLine("Deliveries:");
-//            
-//            MakeDelivery(fleetOfVehicles);
-//            
-//            var fleetOfTrucks = new Fleet();
-//            
-//            IDeliveryVehicle truckOne = factory.CreateDeliveryTruck();
-//            IDeliveryVehicle truckTwo = factory.CreateDeliveryTruck();
-//            IDeliveryVehicle truckThree = factory.CreateDeliveryTruck();
-//            
-//            fleetOfTrucks.Add(truckOne);
-//            fleetOfTrucks.Add(truckTwo);
-//            fleetOfTrucks.Add(truckThree);
-//
-//            Console.WriteLine("\nDeliveries made by the new fleet of trucks:");
-//            MakeDelivery(fleetOfTrucks);
-//            
-//            Console.WriteLine("\nTotal parcels delivered (including pick-ups): " + DeliveryCounter.NumberOfDeliveries);
-//        }
-//
-//        private void MakeDelivery(IDeliveryVehicle vehicle)
-//        {
-//            vehicle.Deliver();
-//        }
-//    }
+    class DeliveryApp
+    {
+        public static void Main(string[] args)
+        {
+            AbstractDeliveryVehicleFactory factory = new CountingDeliveryVehicleFactory();
+            
+            var deliveryApp = new DeliveryApp();
+            deliveryApp.PlanDelivery(factory);
+        }
+
+        private void PlanDelivery(AbstractDeliveryVehicleFactory factory)
+        {
+            IDeliveryVehicle deliveryBike = factory.CreateDeliveryBike();
+            IDeliveryVehicle deliveryCar = factory.CreateDeliveryCar();
+            IDeliveryVehicle deliveryVan = factory.CreateDeliveryVan();
+            IDeliveryVehicle deliveryTruck = factory.CreateDeliveryTruck();
+            IDeliveryVehicle locker = factory.CreateParcelLocker();
+            
+            Fleet fleetOfVehicles = new Fleet();
+            
+            fleetOfVehicles.Add(deliveryBike);
+            fleetOfVehicles.Add(deliveryCar);
+            fleetOfVehicles.Add(deliveryVan);
+            fleetOfVehicles.Add(deliveryTruck);
+            fleetOfVehicles.Add(locker);
+            
+            Console.WriteLine("Deliveries:");
+            
+            MakeDelivery(fleetOfVehicles);
+            
+            var fleetOfTrucks = new Fleet();
+            
+            IDeliveryVehicle truckOne = factory.CreateDeliveryTruck();
+            IDeliveryVehicle truckTwo = factory.CreateDeliveryTruck();
+            IDeliveryVehicle truckThree = factory.CreateDeliveryTruck();
+            
+            fleetOfTrucks.Add(truckOne);
+            fleetOfTrucks.Add(truckTwo);
+            fleetOfTrucks.Add(truckThree);
+
+            Console.WriteLine("\nDeliveries made by the new fleet of trucks:");
+            MakeDelivery(fleetOfTrucks);
+            
+            Console.WriteLine("\nTotal parcels delivered (including pick-ups): " + DeliveryCounter.NumberOfDeliveries);
+        }
+
+        private void MakeDelivery(IDeliveryVehicle vehicle)
+        {
+            vehicle.Deliver();
+        }
+    }
     
     #region Deliver Vehicles
 
@@ -128,7 +128,7 @@ namespace DeliveryApplication
     public class DeliveryCounter : IDeliveryVehicle
     {
         private IDeliveryVehicle _vehicle;
-        public static int NumberOfDeliveries { get; set; }
+        public static int NumberOfDeliveries { get; private set; }
 
         public DeliveryCounter(IDeliveryVehicle vehicle)
         {
